@@ -1,0 +1,46 @@
+{{Matchlist|id=qYes0iRpTj|width=380px|collapsed=false|title=Round 1 Matches|matchsection=Round 1
+|M1header=November 24, 2026
+|{{Match
+	|opponent1={{TeamOpponent|heroic}}|opponent2={{TeamOpponent|imp}}
+	|date=November 24, 2026 - 12:05 {{Abbr/SGT}} |finished=true
+	|twitch=PGL |youtube=PGL/_7LJB5SAgrY |kick=PGL
+	|map1={{Map|map=Mirage|finished=true
+		|t1firstside=ct|t1t=0|t1ct=6|t2t=6|t2ct=7
+		|stats=244965|vod=https://youtu.be/RDZVqR1EmT4?t=13}}
+	|hltv=2400494
+	}}
+|{{Match
+	|opponent1={{TeamOpponent|9z}}|opponent2={{TeamOpponent|lvg}}
+	|date=November 24, 2026 - 12:05 {{Abbr/SGT}} |finished=true
+	|twitch=PGL CS2 |youtube=PGL/r15_iNWob2A |kick=PGL CS2
+	|map1={{Map|map=Inferno|finished=true
+		|t1firstside=ct|t1t=5|t1ct=6|t2t=6|t2ct=7
+		|stats=244967|vod=https://youtu.be/UZFr8PSMvjk?t=37}}
+	|hltv=2400495
+	}}
+====Round 3====
+{{Toggle group start|state=hide}}
+{{box|start|padding=2em}}
+=====High=====
+{{Matchlist|id=8G2UXTP8Mk|width=380px|collapsed=false|title=Round 3 High Matches|matchsection=Round 3
+|M1header=November 25, 2026
+|{{Match
+	|opponent1={{TeamOpponent|imp}}|opponent2={{TeamOpponent|fq}}
+	|date=November 25, 2026 - 16:30 {{Abbr/SGT}} |finished=true
+	|twitch=PGL |youtube=PGL/Cfe3Vp39n2g |kick=PGL
+	|map1={{Map|map=Dust II|finished=true
+		|t1firstside=ct|t1t=4|t1ct=7|t2t=5|t2ct=8
+		|stats=245008|vod=https://youtu.be/yLF2UqLeMGI?t=38}}
+	|map2={{Map|map=Cache|finished=true
+		|t1firstside=t|t1t=7|t1ct=2|t2t=8|t2ct=5
+		|stats=245011|vod=https://youtu.be/yLF2UqLeMGI?t=3372}}
+	|map3={{Map|map=Inferno|finished=skip}}
+	|hltv=2400569
+	}}
+|{{Match
+	|opponent1={{TeamOpponent|nip}}|opponent2={{TeamOpponent|tl}}
+	|date=November 25, 2026 - 19:00 {{Abbr/SGT}} |finished=true
+	|twitch=PGL |youtube=PGL/Cfe3Vp39n2g |kick=PGL
+	|map1={{Map|map=Inferno|finished=true
+		|t1firstside=ct|t1t=4|t1ct=9|t2t=3|t2ct=0
+		|stats=245014|vod=https://youtu.be/n6qkiicKVQY?t=18}}
