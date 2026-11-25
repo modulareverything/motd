@@ -1,6 +1,22 @@
 import { cacheDir } from "../../core/cache";
-import type { Ask, Context, Game, Match, Status, Watch, Window } from "../../core/game";
-import { type Client, findStream, pageWikitext, parseTicker, renderTickers, resolveTeam, type TickerMatch } from "./liquipedia";
+import type {
+  Ask,
+  Context,
+  Game,
+  Match,
+  Status,
+  Watch,
+  Window,
+} from "../../core/game";
+import {
+  type Client,
+  findStream,
+  pageWikitext,
+  parseTicker,
+  renderTickers,
+  resolveTeam,
+  type TickerMatch,
+} from "./liquipedia";
 import { loadStandings, type RankOf } from "./rankings";
 import { scoreMatches } from "./score";
 import { findVideo, videoId, videoStats, type VideoStats } from "./youtube";
@@ -19,7 +35,11 @@ function readConfig(config: unknown): CsConfig {
   return { teams };
 }
 
-const client = (ctx: Context): Client => ({ contact: ctx.contact, cacheDir, warn: ctx.warn });
+const client = (ctx: Context): Client => ({
+  contact: ctx.contact,
+  cacheDir,
+  warn: ctx.warn,
+});
 
 function status(match: TickerMatch, now: Date): Status {
   if (match.finished) return "finished";
@@ -29,29 +49,50 @@ function status(match: TickerMatch, now: Date): Status {
 function inWindow(match: TickerMatch, window: Window): boolean {
   const s = status(match, window.now);
   if (s === "live") return true;
-  return s === "finished" ? match.start >= window.from : match.start <= window.to;
+  return s === "finished"
+    ? match.start >= window.from
+    : match.start <= window.to;
 }
 
-async function stream(ctx: Context, match: TickerMatch): Promise<string | undefined> {
+async function stream(
+  ctx: Context,
+  match: TickerMatch,
+): Promise<string | undefined> {
   const page = match.eventPage.replace(/_/g, " ");
-  const wikitext = await ctx.cache(`wikitext:${page}`, TEN_MINUTES, () => pageWikitext(client(ctx), page));
+  const wikitext = await ctx.cache(`wikitext:${page}`, TEN_MINUTES, () =>
+    pageWikitext(client(ctx), page),
+  );
   return findStream(wikitext, match.start, match.tzOffset, match.teams);
 }
 
-async function watch(ctx: Context, match: TickerMatch, now: Date): Promise<Watch | undefined> {
+async function watch(
+  ctx: Context,
+  match: TickerMatch,
+  now: Date,
+): Promise<Watch | undefined> {
   const s = status(match, now);
   if (s === "finished") {
     if (match.vod) return { url: match.vod, label: "full VOD, from Map 1" };
     const key = ctx.env.YOUTUBE_API_KEY;
-    return key ? findVideo(ctx.cache, key, match.teams, match.event, match.start) : undefined;
+    return key
+      ? findVideo(ctx.cache, key, match.teams, match.event, match.start)
+      : undefined;
   }
   const url = await stream(ctx, match);
   if (!url) return undefined;
   if (s === "upcoming") return { url, label: "stream" };
-  return { url: url.includes("watch?v=") ? `${url}&t=0s` : url, label: "live stream, from the start" };
+  return {
+    url: url.includes("watch?v=") ? `${url}&t=0s` : url,
+    label: "live stream, from the start",
+  };
 }
 
-async function orSkip<T>(ctx: Context, what: string, load: () => Promise<T>, fallback: T): Promise<T> {
+async function orSkip<T>(
+  ctx: Context,
+  what: string,
+  load: () => Promise<T>,
+  fallback: T,
+): Promise<T> {
   try {
     return await load();
   } catch (error) {
@@ -64,9 +105,14 @@ export const cs: Game = {
   credit: "Data: Liquipedia (CC-BY-SA), Valve Regional Standings",
 
   async setup(ctx: Context, ask: Ask): Promise<CsConfig> {
-    const answer = ask("Which teams do you support? (comma-separated, blank for none)");
+    const answer = ask(
+      "Which teams do you support? (comma-separated, blank for none)",
+    );
     const teams: string[] = [];
-    for (const name of answer.split(",").map((s) => s.trim()).filter(Boolean)) {
+    for (const name of answer
+      .split(",")
+      .map((s) => s.trim())
+      .filter(Boolean)) {
       const result = await resolveTeam(client(ctx), name);
       if ("page" in result) {
         console.log(`  ✓ ${result.page}`);
@@ -79,31 +125,59 @@ export const cs: Game = {
       }
       console.log(`  No team called "${name}". Did you mean:`);
       result.suggestions.forEach((s, i) => console.log(`    ${i + 1}. ${s}`));
-      const pick = result.suggestions[Number(ask("  Pick a number, or Enter to skip")) - 1];
+      const pick =
+        result.suggestions[
+          Number(ask("  Pick a number, or Enter to skip")) - 1
+        ];
       if (pick) teams.push(pick);
     }
     return { teams };
   },
 
-  async matches(ctx: Context, config: unknown, window: Window): Promise<Match[]> {
+  async matches(
+    ctx: Context,
+    config: unknown,
+    window: Window,
+  ): Promise<Match[]> {
     const { teams } = readConfig(config);
-    const html = await ctx.cache(`tickers:${teams.join("|")}`, TEN_MINUTES, () => renderTickers(client(ctx), teams));
+    const html = await ctx.cache(
+      `tickers:${teams.join("|")}`,
+      TEN_MINUTES,
+      () => renderTickers(client(ctx), teams),
+    );
     const matches = parseTicker(html).filter((m) => inWindow(m, window));
 
-    const rankOf = await orSkip<RankOf>(ctx, "rankings", () => loadStandings(ctx.cache), () => undefined);
+    const rankOf = await orSkip<RankOf>(
+      ctx,
+      "rankings",
+      () => loadStandings(ctx.cache),
+      () => undefined,
+    );
     const key = ctx.env.YOUTUBE_API_KEY;
-    const videoIds = matches.map((m) => (m.finished && m.vod ? videoId(m.vod) : undefined));
+    const videoIds = matches.map((m) =>
+      m.finished && m.vod ? videoId(m.vod) : undefined,
+    );
     const ids = videoIds.filter((id): id is string => id !== undefined);
     const stats =
       key && ids.length
-        ? await orSkip(ctx, "view counts", () => videoStats(ctx.cache, key, ids), new Map<string, VideoStats>())
+        ? await orSkip(
+            ctx,
+            "view counts",
+            () => videoStats(ctx.cache, key, ids),
+            new Map<string, VideoStats>(),
+          )
         : new Map<string, VideoStats>();
 
     const scores = scoreMatches(
       matches.map((m, i) => {
         const id = videoIds[i];
         const video = id ? stats.get(id) : undefined;
-        return { tier: m.tier, stage: m.stage, ranks: [rankOf(m.teams[0]), rankOf(m.teams[1])], ...(video ? { video } : {}) };
+        return {
+          tier: m.tier,
+          stage: m.stage,
+          ranks: [rankOf(m.teams[0]), rankOf(m.teams[1])],
+          ...(video ? { video } : {}),
+        };
       }),
       window.now,
     );

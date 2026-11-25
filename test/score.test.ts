@@ -28,12 +28,19 @@ describe("scoreMatches", () => {
       "Round 4 - Bo3",
       "Bo5",
     ];
-    const scores = scoreMatches(stages.map((stage) => ({ stage, ranks: [undefined, undefined] })), now);
+    const scores = scoreMatches(
+      stages.map((stage) => ({ stage, ranks: [undefined, undefined] })),
+      now,
+    );
     expect(scores).toEqual([30, 24, 24, 18, 15, 0, 0]);
   });
 
   test("scores views per hour against the other videos, skipping videos under 3 hours old", () => {
-    const base = { tier: 1 as const, stage: "Round 1 - Bo1", ranks: [undefined, undefined] as [undefined, undefined] };
+    const base = {
+      tier: 1 as const,
+      stage: "Round 1 - Bo1",
+      ranks: [undefined, undefined] as [undefined, undefined],
+    };
     expect(
       scoreMatches(
         [
@@ -48,7 +55,10 @@ describe("scoreMatches", () => {
   });
 
   test("caps the view score at 20", () => {
-    const base = { stage: "Round 1 - Bo1", ranks: [undefined, undefined] as [undefined, undefined] };
+    const base = {
+      stage: "Round 1 - Bo1",
+      ranks: [undefined, undefined] as [undefined, undefined],
+    };
     const scores = scoreMatches(
       [
         { ...base, video: { views: 100, publishedAt: hoursAgo(10) } },

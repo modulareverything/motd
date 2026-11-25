@@ -12,8 +12,14 @@ const markdown = `### Standings as of 2026_11_02<br />
 
 test("matches Valve's team names to Liquipedia's", () => {
   const rankOf = parseStandings(markdown);
-  expect(rankOf({ page: "Team Vitality", name: "Team Vitality", short: "Vitality" })).toBe(2);
+  expect(
+    rankOf({ page: "Team Vitality", name: "Team Vitality", short: "Vitality" }),
+  ).toBe(2);
   expect(rankOf({ page: "MOUZ", name: "MOUZ", short: "MOUZ" })).toBe(1);
-  expect(rankOf({ page: "Natus Vincere", name: "Natus Vincere", short: "NAVI" })).toBe(13);
-  expect(rankOf({ page: "Team Liquid", name: "Team Liquid", short: "Liquid" })).toBeUndefined();
+  expect(
+    rankOf({ page: "Natus Vincere", name: "Natus Vincere", short: "NAVI" }),
+  ).toBe(13);
+  expect(
+    rankOf({ page: "Team Liquid", name: "Team Liquid", short: "Liquid" }),
+  ).toBeUndefined();
 });

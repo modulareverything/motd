@@ -23,7 +23,8 @@ function stagePoints(stage: string): number {
   return 0;
 }
 
-const rankPoints = (rank: number | undefined) => (rank === undefined ? 0 : Math.max(0, 21 - rank) / 2);
+const rankPoints = (rank: number | undefined) =>
+  rank === undefined ? 0 : Math.max(0, 21 - rank) / 2;
 
 function viewsPerHour(input: ScoreInput, now: Date): number | undefined {
   if (!input.video) return undefined;
@@ -34,7 +35,9 @@ function viewsPerHour(input: ScoreInput, now: Date): number | undefined {
 function median(values: number[]): number {
   const sorted = [...values].sort((a, b) => a - b);
   const mid = Math.floor(sorted.length / 2);
-  return sorted.length % 2 ? sorted[mid]! : (sorted[mid - 1]! + sorted[mid]!) / 2;
+  return sorted.length % 2
+    ? sorted[mid]!
+    : (sorted[mid - 1]! + sorted[mid]!) / 2;
 }
 
 // Views are judged against the other videos in the same list, since what counts as a lot depends on the event.
@@ -45,7 +48,10 @@ export function scoreMatches(inputs: ScoreInput[], now: Date): number[] {
 
   return inputs.map((input, i) => {
     const rate = rates[i];
-    const views = rate === undefined || typical === 0 ? 0 : Math.min(20, (10 * rate) / typical);
+    const views =
+      rate === undefined || typical === 0
+        ? 0
+        : Math.min(20, (10 * rate) / typical);
     return (
       (input.tier ? TIER_POINTS[input.tier] : 0) +
       stagePoints(input.stage) +

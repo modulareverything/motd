@@ -48,6 +48,7 @@ Your teams come first. The others are ranked by:
    ```
 
    `bun link` puts `motd` on your PATH.
+
 3. Optional: add a YouTube API key, which lets motd use view counts and find videos Liquipedia hasn't linked yet.
    1. In [Google Cloud Console](https://console.cloud.google.com), create a project.
    2. In **APIs & Services → Library**, enable **YouTube Data API v3**.
@@ -55,6 +56,7 @@ Your teams come first. The others are ranked by:
    4. `cp env.example .env` and paste the key after `YOUTUBE_API_KEY=`.
 
    motd reads the `.env` in its own folder, wherever you run it from. A 1Password Environments `.env` mounted there works too.
+
 4. Run `motd cs`. The first run asks for:
    - **a contact email**, which Liquipedia's API terms ask every client to send;
    - **the teams you support**, checked against Liquipedia, so `vitality` is saved as `Team Vitality`.

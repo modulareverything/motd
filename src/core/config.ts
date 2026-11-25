@@ -2,7 +2,11 @@ import { mkdir } from "node:fs/promises";
 import { homedir } from "node:os";
 import { dirname, join } from "node:path";
 
-export const configPath = join(process.env.XDG_CONFIG_HOME ?? join(homedir(), ".config"), "motd", "config.json");
+export const configPath = join(
+  process.env.XDG_CONFIG_HOME ?? join(homedir(), ".config"),
+  "motd",
+  "config.json",
+);
 
 export interface Config {
   core?: { email?: string };

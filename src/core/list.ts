@@ -5,12 +5,16 @@ export const TOP = 5;
 // Order never depends on a result.
 export function rank(matches: Match[], all: boolean): Match[] {
   const sorted = [...matches].sort(
-    (a, b) => Number(b.favourite) - Number(a.favourite) || b.score - a.score || a.start.getTime() - b.start.getTime(),
+    (a, b) =>
+      Number(b.favourite) - Number(a.favourite) ||
+      b.score - a.score ||
+      a.start.getTime() - b.start.getTime(),
   );
   return all ? sorted : sorted.slice(0, TOP);
 }
 
-const time = (d: Date) => d.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
+const time = (d: Date) =>
+  d.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
 const day = (d: Date) => d.toLocaleDateString("en-GB", { weekday: "short" });
 
 function status(match: Match): string {

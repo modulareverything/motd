@@ -34,7 +34,9 @@ async function loadEnv(): Promise<void> {
     throw error;
   }
   for (const line of text.split("\n")) {
-    const m = line.match(/^\s*(?:export\s+)?([A-Za-z_][A-Za-z0-9_]*)\s*=\s*(.*?)\s*$/);
+    const m = line.match(
+      /^\s*(?:export\s+)?([A-Za-z_][A-Za-z0-9_]*)\s*=\s*(.*?)\s*$/,
+    );
     if (!m || process.env[m[1]!] !== undefined) continue;
     process.env[m[1]!] = m[2]!.replace(/^(["'])(.*)\1$/, "$2");
   }
@@ -51,10 +53,17 @@ function context(config: Config, refresh: boolean): Context {
   };
 }
 
-async function setup(config: Config, name: string, game: Game): Promise<Config> {
+async function setup(
+  config: Config,
+  name: string,
+  game: Game,
+): Promise<Config> {
   if (!config.core?.email) {
-    const email = ask("Contact email for Liquipedia's API (sent with every request, as its terms ask):");
-    if (!email.includes("@")) throw new Error("That doesn't look like an email address.");
+    const email = ask(
+      "Contact email for Liquipedia's API (sent with every request, as its terms ask):",
+    );
+    if (!email.includes("@"))
+      throw new Error("That doesn't look like an email address.");
     config.core = { ...config.core, email };
   }
   config[name] = await game.setup(context(config, false), ask);
@@ -66,12 +75,29 @@ async function setup(config: Config, name: string, game: Game): Promise<Config> 
 function today(now: Date): Window {
   const to = new Date(now);
   to.setHours(23, 59, 59, 999);
-  return { now, from: new Date(now.getTime() - FINISHED_WINDOW_HOURS * 3_600_000), to };
+  return {
+    now,
+    from: new Date(now.getTime() - FINISHED_WINDOW_HOURS * 3_600_000),
+    to,
+  };
 }
 
-async function show(config: Config, name: string, game: Game, flags: Set<string>): Promise<void> {
-  if (!config.core?.email || config[name] === undefined) config = await setup(config, name, game);
-  const matches = rank(await game.matches(context(config, flags.has("--refresh")), config[name], today(new Date())), flags.has("--all"));
+async function show(
+  config: Config,
+  name: string,
+  game: Game,
+  flags: Set<string>,
+): Promise<void> {
+  if (!config.core?.email || config[name] === undefined)
+    config = await setup(config, name, game);
+  const matches = rank(
+    await game.matches(
+      context(config, flags.has("--refresh")),
+      config[name],
+      today(new Date()),
+    ),
+    flags.has("--all"),
+  );
   if (!matches.length) {
     console.log("No matches today.");
     return;

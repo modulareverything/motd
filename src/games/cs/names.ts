@@ -17,5 +17,12 @@ export function aliases(team: Team): string[] {
     .map((word) => word[0] ?? "")
     .join("")
     .toLowerCase();
-  return [...new Set([normalize(team.name), normalize(team.short), normalize(team.page), initials])];
+  return [
+    ...new Set([
+      normalize(team.name),
+      normalize(team.short),
+      normalize(team.page),
+      initials,
+    ]),
+  ];
 }
