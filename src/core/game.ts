@@ -23,6 +23,8 @@ export interface Context {
   cache: Cache;
   env: Record<string, string | undefined>;
   warn(message: string): void;
+  /** Says what is loading, on one line that the next call replaces. */
+  progress(message: string): void;
 }
 
 /** Finished matches from `from` on, live matches, and matches due to start by `to`. */

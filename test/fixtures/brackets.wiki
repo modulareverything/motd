@@ -1,0 +1,477 @@
+==Results==
+==={{Stage|Group Stage}}===
+{{box|start|padding=2em}}
+====Group A====
+{{Bracket|Bracket/8-2QL-U-4L2DS-1Q|id=2CV5lDzur9|matchWidth=170
+<!-- Upper Bracket Quarterfinals -->
+|R1M1={{Match
+	|opponent1={{TeamOpponent|legacy}}|opponent2={{TeamOpponent|mongolz}}
+	|date=November 2, 2026 - 10:00 {{Abbr/CST}} |finished=true
+	|twitch=ESL CS |youtube=ESL Counter-Strike/WjkcbItqZTg |kick=ESL CS
+	|map1={{Map|map=Mirage|finished=true
+		|t1firstside=ct|t1t=4|t1ct=8|t2t=4|t2ct=8
+		|o1t1firstside=t|o1t1t=2|o1t1ct=2|o1t2t=0|o1t2ct=1
+		|stats=243488|vod=https://youtu.be/twMlSwT9qeI?t=29}}
+	|map2={{Map|map=Dust II|finished=true
+		|t1firstside=t|t1t=2|t1ct=4|t2t=3|t2ct=10
+		|stats=243491|vod=https://youtu.be/twMlSwT9qeI?t=4057}}
+	|map3={{Map|map=Ancient|finished=true
+		|t1firstside=ct|t1t=4|t1ct=4|t2t=8|t2ct=5
+		|stats=243493|vod=https://youtu.be/twMlSwT9qeI?t=6355}}
+	|hltv=2399855
+	}}
+|R1M2={{Match
+	|opponent1={{TeamOpponent|heroic}}|opponent2={{TeamOpponent|b8}}
+	|date=November 2, 2026 - 10:00 {{Abbr/CST}} |finished=true
+	|twitch=ESL CS B |youtube=ESL Counter-Strike/NbNK2IYGK2A |kick=ESL CS B
+	|map1={{Map|map=Nuke|finished=true
+		|t1firstside=t|t1t=9|t1ct=4|t2t=1|t2ct=3
+		|stats=243487|vod=https://youtu.be/NnKkX0H49tY?t=31}}
+	|map2={{Map|map=Dust II|finished=true
+		|t1firstside=ct|t1t=7|t1ct=6|t2t=6|t2ct=1
+		|stats=243490|vod=https://youtu.be/NnKkX0H49tY?t=2332}}
+	|map3={{Map|map=Cache|finished=skip}}
+	|hltv=2399856
+	}}
+|R1M3={{Match
+	|opponent1={{TeamOpponent|furia}}|opponent2={{TeamOpponent|faze}}
+	|date=November 2, 2026 - 16:50 {{Abbr/CST}} |finished=true
+	|twitch=ESL CS |youtube=ESL Counter-Strike/WjkcbItqZTg |kick=ESL CS
+	|map1={{Map|map=Ancient|finished=true
+		|t1firstside=ct|t1t=1|t1ct=10|t2t=2|t2ct=11
+		|stats=243500|vod=https://youtu.be/JuP9R4l0r6A?t=28}}
+	|map2={{Map|map=Dust II|finished=true
+		|t1firstside=t|t1t=7|t1ct=6|t2t=0|t2ct=5
+		|stats=243502|vod=https://youtu.be/JuP9R4l0r6A?t=2855}}
+	|map3={{Map|map=Cache|finished=true
+		|t1firstside=ct|t1t=5|t1ct=8|t2t=4|t2ct=0
+		|stats=243504|vod=https://youtu.be/JuP9R4l0r6A?t=5325}}
+	|hltv=2399857
+	}}
+|R1M4={{Match
+	|opponent1={{TeamOpponent|navi}}|opponent2={{TeamOpponent|falcons}}
+	|date=November 2, 2026 - 19:45 {{Abbr/CST}} |finished=true
+	|twitch=ESL CS |youtube=ESL Counter-Strike/WjkcbItqZTg |kick=ESL CS
+	|map1={{Map|map=Ancient|finished=true
+		|t1firstside=t|t1t=7|t1ct=6|t2t=0|t2ct=5
+		|stats=243506|vod=https://youtu.be/jGjLsrSWvgc?t=39}}
+	|map2={{Map|map=Mirage|finished=true
+		|t1firstside=ct|t1t=7|t1ct=6|t2t=6|t2ct=5
+		|stats=243510|vod=https://youtu.be/jGjLsrSWvgc?t=2395}}
+	|map3={{Map|map=Anubis|finished=skip}}
+	|hltv=2399858
+	}}
+
+<!-- Upper Bracket Semifinals -->
+|R2M1={{Match
+	|opponent1={{TeamOpponent|mongolz}}|opponent2={{TeamOpponent|heroic}}
+	|date=November 3, 2026 - 16:10 {{Abbr/CST}} |finished=true
+	|twitch=ESL CS B |youtube=ESL Counter-Strike/IVUE4wgQRQ4 |kick=ESL CS B
+	|map1={{Map|map=Inferno|finished=true
+		|t1firstside=t|t1t=6|t1ct=7|t2t=1|t2ct=6
+		|stats=243543|vod=https://youtu.be/LBnen5q4p-4?t=34}}
+	|map2={{Map|map=Nuke|finished=true
+		|t1firstside=ct|t1t=6|t1ct=6|t2t=6|t2ct=6
+		|o1t1firstside=t|o1t1t=1|o1t1ct=2|o1t2t=1|o1t2ct=2
+		|o2t1firstside=ct|o2t1t=2|o2t1ct=2|o2t2t=1|o2t2ct=1
+		|stats=243546|vod=https://youtu.be/LBnen5q4p-4?t=2986}}
+	|map3={{Map|map=Ancient|finished=skip}}
+	|hltv=2399995
+	}}
+|R2M2={{Match
+	|opponent1={{TeamOpponent|furia}}|opponent2={{TeamOpponent|navi}}
+	|date=November 3, 2026 - 18:15 {{Abbr/CST}} |finished=true
+	|twitch=ESL CS |youtube=ESL Counter-Strike/KZf_z4-h0xU |kick=ESL CS
+	|map1={{Map|map=Ancient|finished=true
+		|t1firstside=ct|t1t=8|t1ct=4|t2t=8|t2ct=4
+		|o1t1firstside=t|o1t1t=0|o1t1ct=0|o1t2t=1|o1t2ct=3
+		|stats=243550|vod=https://youtu.be/4nDGR_8igIY?t=26}}
+	|map2={{Map|map=Nuke|finished=true
+		|t1firstside=t|t1t=3|t1ct=9|t2t=3|t2ct=9
+		|o1t1firstside=ct|o1t1t=1|o1t1ct=3|o1t2t=0|o1t2ct=0
+		|stats=243554|vod=https://youtu.be/4nDGR_8igIY?t=3799}}
+	|map3={{Map|map=Cache|finished=true
+		|t1firstside=ct|t1t=5|t1ct=8|t2t=4|t2ct=6
+		|stats=243560|vod=https://youtu.be/4nDGR_8igIY?t=7647}}
+	|hltv=2399996
+	}}
+
+<!-- Upper Bracket Final -->
+|R3M1={{Match
+	|opponent1={{TeamOpponent|mongolz}}|opponent2={{TeamOpponent|furia}}
+	|date=November 4, 2026 - 17:30 {{Abbr/CST}} |finished=true
+	|twitch=ESL CS B |youtube=ESL Counter-Strike/TYh9AUNxWN8 |kick=ESL CS B
+	|map1={{Map|map=Inferno|finished=true
+		|t1firstside=t|t1t=5|t1ct=5|t2t=6|t2ct=7
+		|stats=243630|vod=https://youtu.be/lW4fo1YSfCA?t=33}}
+	|map2={{Map|map=Cache|finished=true
+		|t1firstside=t|t1t=7|t1ct=6|t2t=3|t2ct=5
+		|stats=243634|vod=https://youtu.be/lW4fo1YSfCA?t=3304}}
+	|map3={{Map|map=Dust II|finished=true
+		|t1firstside=ct|t1t=7|t1ct=6|t2t=6|t2ct=5
+		|stats=243637|vod=https://youtu.be/lW4fo1YSfCA?t=6067}}
+	|hltv=2400005
+	}}
+
+<!-- Lower Bracket Quarterfinals -->
+|R1M5={{Match
+	|opponent1={{TeamOpponent|legacy}}|opponent2={{TeamOpponent|b8}}
+	|date=November 3, 2026 - 19:00 {{Abbr/CST}} |finished=true
+	|twitch=ESL CS B |youtube=ESL Counter-Strike/IVUE4wgQRQ4 |kick=ESL CS B
+	|map1={{Map|map=Dust II|finished=true
+		|t1firstside=ct|t1t=6|t1ct=5|t2t=7|t2ct=6
+		|stats=243553|vod=https://youtu.be/S0oKNB9ztuY?t=37}}
+	|map2={{Map|map=Cache|finished=true
+		|t1firstside=t|t1t=8|t1ct=5|t2t=2|t2ct=4
+		|stats=243557|vod=https://youtu.be/S0oKNB9ztuY?t=3178}}
+	|map3={{Map|map=Mirage|finished=true
+		|t1firstside=ct|t1t=6|t1ct=3|t2t=9|t2ct=4
+		|stats=243561|vod=https://youtu.be/S0oKNB9ztuY?t=5603}}
+	|hltv=2399997
+	}}
+|R1M6={{Match
+	|opponent1={{TeamOpponent|faze}}|opponent2={{TeamOpponent|falcons}}
+	|date=November 3, 2026 - 15:00 {{Abbr/CST}} |finished=true
+	|twitch=ESL CS |youtube=ESL Counter-Strike/KZf_z4-h0xU |kick=ESL CS
+	|map1={{Map|map=Ancient|finished=true
+		|t1firstside=t|t1t=2|t1ct=1|t2t=3|t2ct=10
+		|stats=243539|vod=https://youtu.be/iCRPFlmBlY8?t=33}}
+	|map2={{Map|map=Anubis|finished=true
+		|t1firstside=t|t1t=7|t1ct=6|t2t=5|t2ct=5
+		|stats=243542|vod=https://youtu.be/iCRPFlmBlY8?t=2028}}
+	|map3={{Map|map=Mirage|finished=true
+		|t1firstside=t|t1t=6|t1ct=1|t2t=7|t2ct=6
+		|stats=243544|vod=https://youtu.be/iCRPFlmBlY8?t=5249}}
+	|hltv=2399994
+	}}
+
+<!-- Lower Bracket Semifinal -->
+|R2M3={{Match
+	|opponent1={{TeamOpponent|navi}}|opponent2={{TeamOpponent|b8}}
+	|date=November 4, 2026 - 12:35 {{Abbr/CST}} |finished=true
+	|twitch=ESL CS B |youtube=ESL Counter-Strike/TYh9AUNxWN8 |kick=ESL CS B
+	|map1={{Map|map=Ancient|finished=true
+		|t1firstside=t|t1t=7|t1ct=6|t2t=3|t2ct=5
+		|stats=243619|vod=https://youtu.be/-HjoIrPc5Sc}}
+	|map2={{Map|map=Dust II|finished=true
+		|t1firstside=ct|t1t=7|t1ct=6|t2t=6|t2ct=5
+		|stats=243622|vod=https://youtu.be/-HjoIrPc5Sc?t_2789}}
+	|map3={{Map|map=Cache|finished=skip}}
+	|hltv=2400001
+	}}
+|R2M4={{Match
+	|opponent1={{TeamOpponent|heroic}}|opponent2={{TeamOpponent|falcons}}
+	|date=November 4, 2026 - 12:35 {{Abbr/CST}} |finished=true
+	|twitch=ESL CS |youtube=ESL Counter-Strike/SH2T216ir1k |kick=ESL CS
+	|map1={{Map|map=Ancient|finished=true
+		|t1firstside=t|t1t=5|t1ct=3|t2t=6|t2ct=7
+		|stats=243620|vod=https://youtu.be/i8usPC1Ak8I}}
+	|map2={{Map|map=Dust II|finished=true
+		|t1firstside=ct|t1t=1|t1ct=5|t2t=7|t2ct=6
+		|stats=243621|vod=https://youtu.be/i8usPC1Ak8I?t=2885}}
+	|map3={{Map|map=Inferno|finished=skip}}
+	|hltv=2400000
+	}}
+
+<!-- Lower Bracket Final -->
+|R3M2={{Match
+	|opponent1={{TeamOpponent|navi}}|opponent2={{TeamOpponent|falcons}}
+	|date=November 4, 2026 - 18:20 {{Abbr/CST}} |finished=true
+	|twitch=ESL CS |youtube=ESL Counter-Strike/SH2T216ir1k |kick=ESL CS
+	|map1={{Map|map=Ancient|finished=true
+		|t1firstside=t|t1t=5|t1ct=6|t2t=6|t2ct=7
+		|stats=243633|vod=https://youtu.be/O1bVHYEiggI?t=28}}
+	|map2={{Map|map=Inferno|finished=true
+		|t1firstside=ct|t1t=4|t1ct=9|t2t=3|t2ct=1
+		|stats=243635|vod=https://youtu.be/O1bVHYEiggI?t=3291}}
+	|map3={{Map|map=Mirage|finished=true
+		|t1firstside=t|t1t=12|t1ct=1|t2t=3|t2ct=0
+		|stats=243640|vod=https://youtu.be/O1bVHYEiggI?t=5665}}
+	|hltv=2400004
+	}}
+}}
+{{box|break|padding=2em}}
+
+====Group B====
+{{Bracket|Bracket/8-2QL-U-4L2DS-1Q|id=cgOkC4VqLt|matchWidth=170
+<!-- Upper Bracket Quarterfinals -->
+|R1M1={{Match
+	|opponent1={{TeamOpponent|mouz}}|opponent2={{TeamOpponent|tyloo}}
+	|date=November 2, 2026 - 18:15 {{Abbr/CST}} |finished=true
+	|twitch=ESL CS B |youtube=ESL Counter-Strike/NbNK2IYGK2A |kick=ESL CS B
+	|map1={{Map|map=Inferno|finished=true
+		|t1firstside=ct|t1t=4|t1ct=9|t2t=3|t2ct=3
+		|stats=243503|vod=https://youtu.be/ErMfFjclihw?t=28}}
+	|map2={{Map|map=Nuke|finished=true
+		|t1firstside=t|t1t=7|t1ct=6|t2t=2|t2ct=5
+		|stats=243505|vod=https://youtu.be/ErMfFjclihw?t=2578}}
+	|map3={{Map|map=Mirage|finished=skip}}
+	|hltv=2399859
+	}}
+|R1M2={{Match
+	|opponent1={{TeamOpponent|9z}}|opponent2={{TeamOpponent|betboom}}
+	|date=November 2, 2026 - 15:00 {{Abbr/CST}} |finished=
+	|twitch=ESL CS B |youtube=ESL Counter-Strike/NbNK2IYGK2A |kick=ESL CS B
+	|map1={{Map|map=Dust II|finished=true
+		|t1firstside=t|t1t=6|t1ct=7|t2t=2|t2ct=6
+		|stats=243497|vod=https://youtu.be/rHFwWNsahxE?t=16}}
+	|map2={{Map|map=Ancient|finished=true
+		|t1firstside=ct|t1t=0|t1ct=7|t2t=5|t2ct=8
+		|stats=243499|vod=https://youtu.be/rHFwWNsahxE?t=2802}}
+	|map3={{Map|map=Mirage|finished=true
+		|t1firstside=t|t1t=4|t1ct=5|t2t=5|t2ct=8
+		|stats=243501|vod=https://youtu.be/rHFwWNsahxE?t=5245}}
+	|hltv=2399860
+	}}
+|R1M3={{Match
+	|opponent1={{TeamOpponent|aurora}}|opponent2={{TeamOpponent|tl}}
+	|date=November 2, 2026 - 12:30 {{Abbr/CST}} |finished=true
+	|twitch=ESL CS B |youtube=ESL Counter-Strike/NbNK2IYGK2A |kick=ESL CS B
+	|map1={{Map|map=Inferno|finished=true
+		|t1firstside=ct|t1t=0|t1ct=3|t2t=9|t2ct=4
+		|stats=243492|vod=https://youtu.be/v2Is7NUPTBk?t=24}}
+	|map2={{Map|map=Anubis|finished=true
+		|t1firstside=ct|t1t=1|t1ct=3|t2t=9|t2ct=4
+		|stats=243494|vod=https://youtu.be/v2Is7NUPTBk?t=2191}}
+	|map3={{Map|map=Cache|finished=skip}}
+	|hltv=2399861
+	}}
+|R1M4={{Match
+	|opponent1={{TeamOpponent|parivision}}|opponent2={{TeamOpponent|g2}}
+	|date=November 2, 2026 - 13:30 {{Abbr/CST}} |finished=true
+	|twitch=ESL CS |youtube=ESL Counter-Strike/WjkcbItqZTg |kick=ESL CS
+	|map1={{Map|map=Dust II|finished=true
+		|t1firstside=t|t1t=4|t1ct=5|t2t=5|t2ct=8
+		|stats=243495|vod=https://youtu.be/aOy8w4XeOvs?t=27}}
+	|map2={{Map|map=Anubis|finished=true
+		|t1firstside=t|t1t=6|t1ct=7|t2t=1|t2ct=6
+		|stats=243496|vod=https://youtu.be/aOy8w4XeOvs?t=3183}}
+	|map3={{Map|map=Ancient|finished=true
+		|t1firstside=ct|t1t=3|t1ct=10|t2t=2|t2ct=7
+		|stats=243498|vod=https://youtu.be/aOy8w4XeOvs?t=6141}}
+	|hltv=2399862
+	}}
+
+<!-- Upper Bracket Semifinals -->
+|R2M1={{Match
+	|opponent1={{TeamOpponent|mouz}}|opponent2={{TeamOpponent|betboom}}
+	|date=November 3, 2026 - 14:00 {{Abbr/CST}} |finished=true
+	|twitch=ESL CS B |youtube=ESL Counter-Strike/IVUE4wgQRQ4 |kick=ESL CS B
+	|map1={{Map|map=Ancient|finished=true
+		|t1firstside=ct|t1t=5|t1ct=8|t2t=4|t2ct=2
+		|stats=243538|vod=https://youtu.be/oxhuCuce5FI?t=35}}
+	|map2={{Map|map=Mirage|finished=true
+		|t1firstside=t|t1t=6|t1ct=6|t2t=6|t2ct=6
+		|o1t1firstside=ct|o1t1t=1|o1t1ct=3|o1t2t=0|o1t2ct=2
+		|stats=243540|vod=https://youtu.be/oxhuCuce5FI?t=2366}}
+	|map3={{Map|map=Dust II|finished=skip}}
+	|hltv=2399993
+	}}
+|R2M2={{Match
+	|opponent1={{TeamOpponent|tl}}|opponent2={{TeamOpponent|parivision}}
+	|date=November 3, 2026 - 10:00 {{Abbr/CST}} |finished=true
+	|twitch=ESL CS |youtube=ESL Counter-Strike/KZf_z4-h0xU |kick=ESL CS
+	|map1={{Map|map=Ancient|finished=true
+		|t1firstside=ct|t1t=2|t1ct=5|t2t=7|t2ct=6
+		|stats=243529|vod=https://youtu.be/9O18QW0gaQQ?t=21}}
+	|map2={{Map|map=Inferno|finished=true
+		|t1firstside=t|t1t=5|t1ct=4|t2t=6|t2ct=7
+		|stats=243531|vod=https://youtu.be/9O18QW0gaQQ?t=2911}}
+	|map3={{Map|map=Mirage|finished=skip}}
+	|hltv=2399990
+	}}
+
+<!-- Upper Bracket Final -->
+|R3M1={{Match
+	|opponent1={{TeamOpponent|mouz}}|opponent2={{TeamOpponent|parivision}}
+	|date=November 4, 2026 - 15:00 {{Abbr/CST}} |finished=true
+	|twitch=ESL CS B |youtube=ESL Counter-Strike/TYh9AUNxWN8 |kick=ESL CS B
+	|map1={{Map|map=Ancient|finished=true
+		|t1firstside=ct|t1t=3|t1ct=10|t2t=2|t2ct=0
+		|stats=243623|vod=https://youtu.be/HE5dLEyXPOg?t=26}}
+	|map2={{Map|map=Mirage|finished=true
+		|t1firstside=t|t1t=9|t1ct=4|t2t=6|t2ct=3
+		|stats=243625|vod=https://youtu.be/HE5dLEyXPOg?t=2097}}
+	|map3={{Map|map=Cache|finished=skip}}
+	|hltv=2400003
+	}}
+
+<!-- Lower Bracket Quarterfinals -->
+|R1M5={{Match
+	|opponent1={{TeamOpponent|tyloo}}|opponent2={{TeamOpponent|9z}}
+	|date=November 3, 2026 - 12:35 {{Abbr/CST}} |finished=true
+	|twitch=ESL CS |youtube=ESL Counter-Strike/KZf_z4-h0xU |kick=ESL CS
+	|map1={{Map|map=Inferno|finished=true
+		|t1firstside=t|t1t=8|t1ct=5|t2t=1|t2ct=4
+		|stats=243533|vod=https://youtu.be/CZFs1Bzga7M?t=27}}
+	|map2={{Map|map=Cache|finished=true
+		|t1firstside=ct|t1t=2|t1ct=10|t2t=2|t2ct=10
+		|o1t1firstside=t|o1t1t=2|o1t1ct=2|o1t2t=0|o1t2ct=1
+		|stats=243536|vod=https://youtu.be/CZFs1Bzga7M?t=2403}}
+	|map3={{Map|map=Ancient|finished=skip}}
+	|hltv=2399992
+	}}
+|R1M6={{Match
+	|opponent1={{TeamOpponent|aurora}}|opponent2={{TeamOpponent|g2}}
+	|date=November 3, 2026 - 10:00 {{Abbr/CST}} |finished=true
+	|twitch=ESL CS B |youtube=ESL Counter-Strike/IVUE4wgQRQ4 |kick=ESL CS B
+	|map1={{Map|map=Nuke|finished=true
+		|t1firstside=t|t1t=8|t1ct=5|t2t=5|t2ct=4
+		|stats=243530|vod=https://youtu.be/VMbUFAHNacQ?t=26}}
+	|map2={{Map|map=Inferno|finished=true
+		|t1firstside=ct|t1t=4|t1ct=5|t2t=7|t2ct=6
+		|stats=243532|vod=https://youtu.be/VMbUFAHNacQ?t=3377}}
+	|map3={{Map|map=Dust II|finished=true
+		|t1firstside=ct|t1t=6|t1ct=6|t2t=6|t2ct=6
+		|o1t1firstside=t|o1t1t=2|o1t1ct=2|o1t2t=0|o1t2ct=1
+		|stats=243534|vod=https://youtu.be/VMbUFAHNacQ?t=6598}}
+	|hltv=2399991
+	}}
+
+<!-- Lower Bracket Semifinal -->
+|R2M3={{Match
+	|opponent1={{TeamOpponent|tl}}|opponent2={{TeamOpponent|tyloo}}
+	|date=November 4, 2026 - 10:00 {{Abbr/CST}} |finished=true
+	|twitch=ESL CS |youtube=ESL Counter-Strike/SH2T216ir1k |kick=ESL CS
+	|map1={{Map|map=Mirage|finished=true
+		|t1firstside=ct|t1t=5|t1ct=8|t2t=4|t2ct=7
+		|stats=243616|vod=https://youtu.be/Bg0rtkwvWPI?}}
+	|map2={{Map|map=Anubis|finished=true
+		|t1firstside=ct|t1t=2|t1ct=11|t2t=1|t2ct=3
+		|stats=243617|vod=https://youtu.be/Bg0rtkwvWPI?t=2865}}
+	|map3={{Map|map=Inferno|finished=skip}}
+	|hltv=2399998
+	}}
+|R2M4={{Match
+	|opponent1={{TeamOpponent|betboom}}|opponent2={{TeamOpponent|aurora}}
+	|date=November 4, 2026 - 10:00 {{Abbr/CST}} |finished=true
+	|twitch=ESL CS B |youtube=ESL Counter-Strike/TYh9AUNxWN8 |kick=ESL CS B
+	|map1={{Map|map=Mirage|finished=true
+		|t1firstside=t|t1t=8|t1ct=5|t2t=1|t2ct=4
+		|stats=243615|vod=https://youtu.be/CNZ9tKM_Qcc}}
+	|map2={{Map|map=Cache|finished=true
+		|t1firstside=ct|t1t=5|t1ct=8|t2t=4|t2ct=1
+		|stats=243618|vod=https://youtu.be/CNZ9tKM_Qcc?t=2573}}
+	|map3={{Map|map=Dust II|finished=skip}}
+	|hltv=2399999
+	}}
+
+<!-- Lower Bracket Final -->
+|R3M2={{Match
+	|opponent1={{TeamOpponent|tl}}|opponent2={{TeamOpponent|betboom}}
+	|date=November 4, 2026 - 15:00 {{Abbr/CST}} |finished=true
+	|twitch=ESL CS |youtube=ESL Counter-Strike/SH2T216ir1k |kick=ESL CS
+	|map1={{Map|map=Anubis|finished=true
+		|t1firstside=ct|t1t=0|t1ct=5|t2t=7|t2ct=6
+		|stats=243624|vod=https://youtu.be/1LJ1ln6wGYU?t=34}}
+	|map2={{Map|map=Nuke|finished=true
+		|t1firstside=ct|t1t=10|t1ct=3|t2t=9|t2ct=2
+		|stats=243626|vod=https://youtu.be/1LJ1ln6wGYU?t=2361}}
+	|map3={{Map|map=Mirage|finished=true
+		|t1firstside=t|t1t=5|t1ct=6|t2t=6|t2ct=7
+		|stats=243629|vod=https://youtu.be/1LJ1ln6wGYU?t=5605}}
+	|hltv=2400002
+	}}
+}}
+{{box|end}}
+
+==={{Stage|Playoffs}}===
+{{Bracket|Bracket/4L2DS|id=9PDM78pmGf
+
+<!-- Quarterfinals -->
+|R1M1={{Match
+	|opponent1={{TeamOpponent|parivision}}|opponent2={{TeamOpponent|navi}}
+	|date=November 6, 2026 - 14:30 {{Abbr/CST}} |finished=true
+	|twitch=ESL CS |youtube=ESL CS |kick=ESL CS
+	|map1={{Map|map=Mirage|finished=true
+		|t1firstside=ct|t1t=3|t1ct=9|t2t=3|t2ct=9
+		|o1t1firstside=t|o1t1t=1|o1t1ct=3|o1t2t=0|o1t2ct=2
+		|stats=243736|vod=https://youtu.be/8K77MlqK0AY?t=27}}
+	|map2={{Map|map=Inferno|finished=true
+		|t1firstside=t|t1t=7|t1ct=2|t2t=8|t2ct=5
+		|stats=243738|vod=https://youtu.be/8K77MlqK0AY?t=4124}}
+	|map3={{Map|map=Ancient|finished=true
+		|t1firstside=t|t1t=5|t1ct=5|t2t=6|t2ct=7
+		|stats=243743|vod=https://youtu.be/8K77MlqK0AY?t=7576}}
+	|hltv=2400006
+	}}
+|R1M2={{Match
+	|opponent1={{TeamOpponent|furia}}|opponent2={{TeamOpponent|betboom}}
+	|date=November 6, 2026 - 19:00 {{Abbr/CST}} |finished=true
+	|twitch=ESL CS |youtube=ESL CS |kick=ESL CS
+	|map1={{Map|map=Ancient|finished=true
+		|t1firstside=ct|t1t=0|t1ct=5|t2t=7|t2ct=6
+		|stats=243748|vod=https://youtu.be/lwjvtUp-ets?t=27}}
+	|map2={{Map|map=Dust II|finished=true
+		|t1firstside=t|t1t=5|t1ct=8|t2t=3|t2ct=7
+		|stats=243753|vod=https://youtu.be/lwjvtUp-ets?t=2353}}
+	|map3={{Map|map=Nuke|finished=true
+		|t1firstside=t|t1t=5|t1ct=7|t2t=5|t2ct=7
+		|o1t1firstside=ct|o1t1t=0|o1t1ct=2|o1t2t=1|o1t2ct=3
+		|stats=243760|vod=https://youtu.be/lwjvtUp-ets?t=5688}}
+	|hltv=2400007
+	}}
+
+<!-- Semifinals -->
+|R2M1={{Match
+	|opponent1={{TeamOpponent|mongolz}}|opponent2={{TeamOpponent|navi}}
+	|date=November 7, 2026 - 14:30 {{Abbr/CST}} |finished=true
+	|twitch=ESL CS |youtube=ESL CS |kick=ESL CS
+	|map1={{Map|map=Cache|finished=true
+		|t1firstside=t|t1t=8|t1ct=5|t2t=6|t2ct=4
+		|stats=243785|vod=https://youtu.be/xieUDAz7D1E?t=29}}
+	|map2={{Map|map=Inferno|finished=true
+		|t1firstside=t|t1t=5|t1ct=8|t2t=4|t2ct=7
+		|stats=243786|vod=https://youtu.be/xieUDAz7D1E?t=3574}}
+	|map3={{Map|map=Mirage|finished=skip}}
+	|hltv=2400008
+	}}
+|R2M2={{Match
+	|opponent1={{TeamOpponent|mouz}}|opponent2={{TeamOpponent|betboom}}
+	|date=November 7, 2026 - 17:45 {{Abbr/CST}} |finished=true
+	|twitch=ESL CS |youtube=ESL CS |kick=ESL CS
+	|map1={{Map|map=Ancient|finished=true
+		|t1firstside=ct|t1t=6|t1ct=7|t2t=5|t2ct=2
+		|stats=243791|vod=https://youtu.be/JGvHerBaz5E?t=31}}
+	|map2={{Map|map=Mirage|finished=true
+		|t1firstside=t|t1t=6|t1ct=7|t2t=2|t2ct=6
+		|stats=243795|vod=https://youtu.be/JGvHerBaz5E?t=2747}}
+	|map3={{Map|map=Nuke|finished=skip}}
+	|hltv=2400009
+	}}
+
+<!-- Grand Final -->
+|R3M1={{Match
+	|opponent1={{TeamOpponent|mongolz}}|opponent2={{TeamOpponent|mouz}}
+	|date=November 8, 2026 - 15:30 {{Abbr/CST}} |finished=true
+	|twitch=ESL CS |youtube=ESL CS |kick=ESL CS
+	|map1={{Map|map=Mirage|finished=true
+		|t1firstside=ct|t1t=1|t1ct=4|t2t=8|t2ct=5
+		|stats=243883|vod=https://youtu.be/-dUpUx4AGns?t=25}}
+	|map2={{Map|map=Dust II|finished=true
+		|t1firstside=t|t1t=6|t1ct=0|t2t=7|t2ct=6
+		|stats=243884|vod=https://youtu.be/-dUpUx4AGns?t=2241}}
+	|map3={{Map|map=Inferno|finished=true
+		|t1firstside=ct|t1t=1|t1ct=3|t2t=9|t2ct=4
+		|stats=243889|vod=https://youtu.be/-dUpUx4AGns?t=4729}}
+	|map4={{Map|map=Ancient|finished=skip}}
+	|map5={{Map|map=Cache|finished=skip}}
+	|hltv=2400011
+	}}
+
+<!-- Third Place Match -->
+|RxMTP={{Match
+    |opponent1={{TeamOpponent|navi}}|opponent2={{TeamOpponent|betboom}}
+	|date=November 8, 2026 - 12:00 {{Abbr/CST}} |finished=true
+	|twitch=ESL CS |youtube=ESL CS |kick=ESL CS
+	|map1={{Map|map=Mirage|finished=true
+		|t1firstside=ct|t1t=4|t1ct=9|t2t=3|t2ct=3
+		|stats=243881|vod=https://youtu.be/To8AW-Tgn04?t=28}}
+	|map2={{Map|map=Ancient|finished=true
+		|t1firstside=t|t1t=7|t1ct=6|t2t=4|t2ct=5
+		|stats=243882|vod=https://youtu.be/To8AW-Tgn04?t=2683}}
+	|map3={{Map|map=Dust II|finished=skip}}
+	|hltv=2400010
+	}}
+}}
+

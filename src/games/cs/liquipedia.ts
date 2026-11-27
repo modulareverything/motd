@@ -139,32 +139,51 @@ function streamUrl(block: string): string | undefined {
     : undefined;
 }
 
+const BLOCK_START = /\{\{(?:Match|Matchlist|Bracket)\b/g;
+
+export interface WikiMatch {
+  /** Where the match's `{{Match` starts in the page. */
+  at: number;
+  block: string;
+}
+
 /**
  * Opponents in wikitext are team templates such as `nip` or `tl`, so matches that start together
  * are told apart by how many templates match one of the teams' names.
  */
+export function findMatch(
+  wikitext: string,
+  start: Date,
+  tzOffset: number,
+  teams: [Team, Team],
+): WikiMatch | undefined {
+  const names = teams.map(aliases);
+  const starts = [...wikitext.matchAll(BLOCK_START)];
+  let best: (WikiMatch & { hits: number }) | undefined;
+  starts.forEach((m, i) => {
+    if (m[0] !== "{{Match") return;
+    const block = wikitext.slice(m.index, starts[i + 1]?.index);
+    const date = block.match(/\|date=([^|\n]+)/)?.[1];
+    if (!date || parseMatchDate(date, tzOffset) !== start.getTime()) return;
+    const templates = [...block.matchAll(/\{\{TeamOpponent\|([^}|]+)/g)].map(
+      (t) => t[1]!.toLowerCase(),
+    );
+    const hits = templates.filter((t) =>
+      names.some((n) => n.some((alias) => alias === t || alias.startsWith(t))),
+    ).length;
+    if (!best || hits > best.hits) best = { at: m.index, block, hits };
+  });
+  return best && { at: best.at, block: best.block };
+}
+
 export function findStream(
   wikitext: string,
   start: Date,
   tzOffset: number,
   teams: [Team, Team],
 ): string | undefined {
-  const names = teams.map(aliases);
-  let best: { url: string; hits: number } | undefined;
-  for (const block of wikitext.split(/\|\{\{Match\b/).slice(1)) {
-    const date = block.match(/\|date=([^|\n]+)/)?.[1];
-    if (!date || parseMatchDate(date, tzOffset) !== start.getTime()) continue;
-    const url = streamUrl(block);
-    if (!url) continue;
-    const templates = [...block.matchAll(/\{\{TeamOpponent\|([^}|]+)/g)].map(
-      (m) => m[1]!.toLowerCase(),
-    );
-    const hits = templates.filter((t) =>
-      names.some((n) => n.some((alias) => alias === t || alias.startsWith(t))),
-    ).length;
-    if (!best || hits > best.hits) best = { url, hits };
-  }
-  return best?.url;
+  const match = findMatch(wikitext, start, tzOffset, teams);
+  return match && streamUrl(match.block);
 }
 
 const API = "https://liquipedia.net/counterstrike/api.php";
@@ -175,7 +194,7 @@ const PARSE_GAP = 30_000;
 export interface Client {
   contact: string;
   cacheDir: string;
-  warn(message: string): void;
+  progress(message: string): void;
 }
 
 const lastAt = async (path: string) => {
@@ -189,12 +208,13 @@ async function waitTurn(client: Client, parse: boolean): Promise<void> {
   const parseStamp = `${client.cacheDir}/liquipedia-parse-at`;
   let ready = (await lastAt(anyStamp)) + ANY_GAP;
   if (parse) ready = Math.max(ready, (await lastAt(parseStamp)) + PARSE_GAP);
-  const delay = ready - Date.now();
-  if (delay > 3_000)
-    client.warn(
-      `Waiting ${Math.ceil(delay / 1000)}s for Liquipedia's rate limit…`,
-    );
-  if (delay > 0) await Bun.sleep(delay);
+  for (let left = ready - Date.now(); left > 0; left = ready - Date.now()) {
+    if (left > 1_000)
+      client.progress(
+        `Waiting ${Math.ceil(left / 1000)}s for Liquipedia's rate limit…`,
+      );
+    await Bun.sleep(Math.min(left, 1_000));
+  }
   await Bun.write(anyStamp, "");
   if (parse) await Bun.write(parseStamp, "");
 }

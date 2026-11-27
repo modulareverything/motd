@@ -1,0 +1,230 @@
+==Results==
+===Group Stage===
+{{Toggle group start|state=show}}
+{{box|start|padding=2em|max-width=1000px}}
+===={{HiddenSort|Group A}}====
+{{GroupTableLeague|title=Group A|width=400px|show_p=false|edate=2026-11-13
+|pbg1=up|pbg2=stayup|pbg3=stayup|pbg4=down|tiebreaker1=series
+|bg1=down|team1=legacy
+|bg2=stayup|team2=vit|temp_tie2=1
+|bg3=stayup|team3=falcons
+|bg4=up|team4=furia
+}}
+{{Matchlist|id=dKfQR2iVXl|gsl=losersfirst|width=400px|collapsed=true|attached=true|title=Group A Matches
+|{{Match
+	|opponent1={{TeamOpponent|legacy}}|opponent2={{TeamOpponent|furia}}
+	|date=November 11, 2026 - 10:00 {{Abbr/HKT}} |finished=true
+	|twitch=BLAST Premier |youtube=BLAST Premier |kick=BLAST Premier
+	|map1={{Map|map=Inferno|finished=true
+		|t1firstside=ct|t1t=5|t1ct=5|t2t=7|t2ct=6
+		|stats=244067|vod=https://youtu.be/O-Fs7ZVTffY?t=30}}
+	|map2={{Map|map=Mirage|finished=true
+		|t1firstside=t|t1t=3|t1ct=4|t2t=4|t2ct=9
+		|stats=244068|vod=https://youtu.be/O-Fs7ZVTffY?t=3792}}
+	|map3={{Map|map=Nuke|finished=skip}}
+	|hltv=2399851
+	}}
+|{{Match
+	|opponent1={{TeamOpponent|vit}}|opponent2={{TeamOpponent|falcons}}
+	|date=November 11, 2026 - 12:15 {{Abbr/HKT}} |finished=true
+	|twitch=BLAST Premier |youtube=BLAST Premier |kick=BLAST Premier
+	|map1={{Map|map=Anubis|finished=true
+		|t1firstside=ct|t1t=6|t1ct=7|t2t=5|t2ct=5
+		|stats=244069|vod=https://youtu.be/bPEdav9fUks?t=20}}
+	|map2={{Map|map=Dust II|finished=true
+		|t1firstside=t|t1t=5|t1ct=8|t2t=3|t2ct=7
+		|stats=244070|vod=https://youtu.be/bPEdav9fUks?t=3362}}
+	|map3={{Map|map=Inferno|finished=skip}}
+	|hltv=2399852
+	}}
+|{{Match
+	|opponent1={{TeamOpponent|legacy}}|opponent2={{TeamOpponent|falcons}}
+	|date=November 12, 2026 - 10:00 {{Abbr/HKT}} |finished=true
+	|twitch=BLAST Premier |youtube=BLAST Premier |kick=BLAST Premier
+	|map1={{Map|map=Dust II|finished=true
+		|t1firstside=ct|t1t=3|t1ct=5|t2t=7|t2ct=6
+		|stats=244121|vod=https://youtu.be/tqJdtvoPZ4c?t=25}}
+	|map2={{Map|map=Mirage|finished=true
+		|t1firstside=t|t1t=3|t1ct=3|t2t=4|t2ct=9
+		|stats=244122|vod=https://youtu.be/tqJdtvoPZ4c?t=2988}}
+	|map3={{Map|map=Inferno|finished=skip}}
+	|hltv=2400200
+	}}
+|{{Match
+	|opponent1={{TeamOpponent|furia}}|opponent2={{TeamOpponent|vit}}
+	|date=November 12, 2026 - 12:00 {{Abbr/HKT}} |finished=true
+	|twitch=BLAST Premier |youtube=BLAST Premier |kick=BLAST Premier
+	|map1={{Map|map=Inferno|finished=true
+		|t1firstside=t|t1t=1|t1ct=4|t2t=2|t2ct=11
+		|stats=244123|vod=https://youtu.be/e-HPF_4rGIw?t=25}}
+	|map2={{Map|map=Dust II|finished=true
+		|t1firstside=ct|t1t=4|t1ct=9|t2t=3|t2ct=7
+		|stats=244124|vod=https://youtu.be/e-HPF_4rGIw?t=2477}}
+	|map3={{Map|map=Mirage|finished=true
+		|t1firstside=ct|t1t=1|t1ct=12|t2t=0|t2ct=0
+		|stats=244125|vod=https://youtu.be/e-HPF_4rGIw?t=5623}}
+	|hltv=2400201
+	}}
+}}
+{{box|break|padding=2em}}
+
+===={{HiddenSort|Group B}}====
+{{GroupTableLeague|title=Group B|width=400px|show_p=false|edate=2026-11-13
+|pbg1=up|pbg2=stayup|pbg3=stayup|pbg4=down|tiebreaker1=series
+|bg1=up|team1=spirit
+|bg2=stayup|team2=mouz
+|bg3=stayup|team3=g2|temp_tie3=1
+|bg4=down|team4=fut
+}}
+{{Matchlist|id=dtHsmWFzIl|gsl=losersfirst|width=400px|collapsed=true|attached=true|title=Group B Matches
+|{{Match
+	|opponent1={{TeamOpponent|spirit}}|opponent2={{TeamOpponent|fut}}
+	|date=November 11, 2026 - 14:30 {{Abbr/HKT}} |finished=true
+	|twitch=BLAST Premier |youtube=BLAST Premier |kick=BLAST Premier
+	|map1={{Map|map=Cache|finished=true
+		|t1firstside=ct|t1t=4|t1ct=9|t2t=3|t2ct=6
+		|stats=244071|vod=https://youtu.be/-J1UzMnFsqo?t=26}}
+	|map2={{Map|map=Nuke|finished=true
+		|t1firstside=t|t1t=0|t1ct=0|t2t=1|t2ct=12
+		|stats=244072|vod=https://youtu.be/-J1UzMnFsqo?t=3426}}
+	|map3={{Map|map=Ancient|finished=true
+		|t1firstside=t|t1t=9|t1ct=4|t2t=2|t2ct=3
+		|stats=244073|vod=https://youtu.be/-J1UzMnFsqo?t=5422}}
+	|hltv=2399853
+	}}
+|{{Match
+	|opponent1={{TeamOpponent|mouz}}|opponent2={{TeamOpponent|g2}}
+	|date=November 11, 2026 - 17:30 {{Abbr/HKT}} |finished=true
+	|twitch=BLAST Premier |youtube=BLAST Premier |kick=BLAST Premier
+	|map1={{Map|map=Nuke|finished=true
+		|t1firstside=t|t1t=6|t1ct=7|t2t=1|t2ct=6
+		|stats=244075|vod=https://youtu.be/RK3ZWWzOWB8?t=21}}
+	|map2={{Map|map=Ancient|finished=true
+		|t1firstside=ct|t1t=6|t1ct=6|t2t=6|t2ct=6
+		|o1t1firstside=t|o1t1t=1|o1t1ct=1|o1t2t=2|o1t2ct=2
+		|stats=244077|vod=https://youtu.be/RK3ZWWzOWB8?t=2564}}
+	|map3={{Map|map=Inferno|finished=true
+		|t1firstside=ct|t1t=2|t1ct=5|t2t=7|t2ct=6
+		|stats=244079|vod=https://youtu.be/RK3ZWWzOWB8?t=6343}}
+	|hltv=2399854
+	}}
+|{{Match
+	|opponent1={{TeamOpponent|fut}}|opponent2={{TeamOpponent|mouz}}
+	|date=November 12, 2026 - 14:55 {{Abbr/HKT}} |finished=true
+	|twitch=BLAST Premier |youtube=BLAST Premier |kick=BLAST Premier
+	|map1={{Map|map=Cache|finished=true
+		|t1firstside=t|t1t=4|t1ct=8|t2t=4|t2ct=8
+		|o1t1firstside=ct|o1t1t=0|o1t1ct=3|o1t2t=0|o1t2ct=3
+		|o2t1firstside=t|o2t1t=3|o2t1ct=1|o2t2t=1|o2t2ct=0
+		|stats=244126|vod=https://youtu.be/LhqXCuBLXkA?t=20}}
+	|map2={{Map|map=Mirage|finished=true
+		|t1firstside=ct|t1t=3|t1ct=9|t2t=3|t2ct=9
+		|o1t1firstside=t|o1t1t=1|o1t1ct=1|o1t2t=2|o1t2ct=2
+		|stats=244129|vod=https://youtu.be/LhqXCuBLXkA?t=4568}}
+	|map3={{Map|map=Nuke|finished=true
+		|t1firstside=ct|t1t=3|t1ct=1|t2t=11|t2ct=2
+		|stats=244135|vod=https://youtu.be/LhqXCuBLXkA?t=8371}}
+	|hltv=2400202
+	}}
+|{{Match
+	|opponent1={{TeamOpponent|spirit}}|opponent2={{TeamOpponent|g2}}
+	|date=November 12, 2026 - 18:40 {{Abbr/HKT}} |finished=true
+	|twitch=BLAST Premier |youtube=BLAST Premier |kick=BLAST Premier
+	|map1={{Map|map=Mirage|finished=true
+		|t1firstside=ct|t1t=2|t1ct=7|t2t=5|t2ct=8
+		|stats=244140|vod=https://youtu.be/OO6vlPylfxs?t=22}}
+	|map2={{Map|map=Nuke|finished=true
+		|t1firstside=t|t1t=8|t1ct=5|t2t=2|t2ct=4
+		|stats=244143|vod=https://youtu.be/OO6vlPylfxs?t=2935}}
+	|map3={{Map|map=Ancient|finished=true
+		|t1firstside=ct|t1t=5|t1ct=8|t2t=4|t2ct=1
+		|stats=244147|vod=https://youtu.be/OO6vlPylfxs?t=5373}}
+	|hltv=2400203
+	}}
+}}
+{{box|end}}
+{{Toggle group end}}
+<br/>
+
+===Playoffs===
+{{Bracket|Bracket/4L2DS|id=EEKhmXLTJL
+<!-- Quarterfinals -->
+|R1M1={{Match
+	|opponent1={{TeamOpponent|g2}}|opponent2={{TeamOpponent|falcons}}
+	|date=November 13, 2026 - 18:55 {{Abbr/HKT}} |finished=true
+	|twitch=BLAST Premier |youtube=BLAST Premier |kick=BLAST Premier
+	|map1={{Map|map=Dust II|finished=true
+		|t1firstside=ct|t1t=7|t1ct=6|t2t=6|t2ct=5
+		|stats=244242|vod=https://youtu.be/oCyxhurYJVk?t=29}}
+	|map2={{Map|map=Mirage|finished=true
+		|t1firstside=t|t1t=2|t1ct=0|t2t=3|t2ct=10
+		|stats=244246|vod=https://youtu.be/oCyxhurYJVk?t=3641}}
+	|map3={{Map|map=Anubis|finished=true
+		|t1firstside=t|t1t=6|t1ct=2|t2t=7|t2ct=6
+		|stats=244256|vod=https://youtu.be/oCyxhurYJVk?t=5629}}
+	|hltv=2400205
+	}}
+|R1M2={{Match
+	|opponent1={{TeamOpponent|vit}}|opponent2={{TeamOpponent|mouz}}
+	|date=November 13, 2026 - 16:00 {{Abbr/HKT}} |finished=true
+	|twitch=BLAST Premier |youtube=BLAST Premier |kick=BLAST Premier
+	|map1={{Map|map=Mirage|finished=true
+		|t1firstside=ct|t1t=1|t1ct=7|t2t=5|t2ct=8
+		|stats=244230|vod=https://youtu.be/0lKJzq6Jv0o?t=20}}
+	|map2={{Map|map=Cache|finished=true
+		|t1firstside=t|t1t=5|t1ct=7|t2t=5|t2ct=7
+		|o1t1firstside=ct|o1t1t=1|o1t1ct=1|o1t2t=2|o1t2ct=2
+		|stats=244234|vod=https://youtu.be/0lKJzq6Jv0o?t=2796}}
+	|map3={{Map|map=Inferno|finished=skip}}
+	|hltv=2400204
+	}}
+
+<!-- Semifinals -->
+|R2M1={{Match
+	|opponent1={{TeamOpponent|furia}}|opponent2={{TeamOpponent|falcons}}
+	|date=November 14, 2026 - 18:35 {{Abbr/HKT}} |finished=true
+	|twitch=BLAST Premier |youtube=BLAST Premier |kick=BLAST Premier
+	|map1={{Map|map=Ancient|finished=true
+		|t1firstside=ct|t1t=5|t1ct=7|t2t=5|t2ct=7
+		|o1t1firstside=t|o1t1t=2|o1t1ct=2|o1t2t=1|o1t2ct=1
+		|stats=244325|vod=https://youtu.be/JT6x45W302k?t=22}}
+	|map2={{Map|map=Dust II|finished=true
+		|t1firstside=t|t1t=7|t1ct=6|t2t=0|t2ct=5
+		|stats=244331|vod=https://youtu.be/JT6x45W302k?t=5120}}
+	|map3={{Map|map=Mirage|finished=skip}}
+	|hltv=2400207
+	}}
+|R2M2={{Match
+	|opponent1={{TeamOpponent|spirit}}|opponent2={{TeamOpponent|mouz}}
+	|date=November 14, 2026 - 16:00 {{Abbr/HKT}} |finished=true
+	|twitch=BLAST Premier |youtube=BLAST Premier |kick=BLAST Premier
+	|map1={{Map|map=Mirage|finished=true
+		|t1firstside=ct|t1t=4|t1ct=9|t2t=3|t2ct=4
+		|stats=244316|vod=https://youtu.be/RFFJZ8RzYz4?t=26}}
+	|map2={{Map|map=Ancient|finished=true
+		|t1firstside=t|t1t=8|t1ct=5|t2t=7|t2ct=4
+		|stats=244317|vod=https://youtu.be/RFFJZ8RzYz4?t=2720}}
+	|map3={{Map|map=Nuke|finished=skip}}
+	|hltv=2400206
+	}}
+
+<!-- Grand Final -->
+|R3M1={{Match
+	|opponent1={{TeamOpponent|furia}}|opponent2={{TeamOpponent|spirit}}
+	|date=November 15, 2026 - 16:00 {{Abbr/HKT}} |finished=true
+	|twitch=BLAST Premier |youtube=BLAST Premier |kick=BLAST Premier
+	|map1={{Map|map=Ancient|finished=true
+		|t1firstside=ct|t1t=7|t1ct=6|t2t=6|t2ct=5
+		|stats=244399|vod=https://youtu.be/FGK9LuXKm8g?t=25}}
+	|map2={{Map|map=Dust II|finished=true
+		|t1firstside=t|t1t=7|t1ct=6|t2t=0|t2ct=5
+		|stats=244409|vod=https://youtu.be/FGK9LuXKm8g?t=3210}}
+	|map3={{Map|map=Mirage|finished=true
+		|t1firstside=ct|t1t=7|t1ct=6|t2t=6|t2ct=2
+		|stats=244416|vod=https://youtu.be/FGK9LuXKm8g?t=5750}}
+	|map4={{Map|map=Cache|finished=skip}}
+	|map5={{Map|map=Nuke|finished=skip}}
+	|hltv=2400208
+	}}
+}}
+

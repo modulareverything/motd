@@ -6,6 +6,7 @@ import { type Config, configPath, loadConfig, saveConfig } from "./core/config";
 import type { Ask, Context, Game, Window } from "./core/game";
 import { rank, render, TOP } from "./core/list";
 import { openUrl } from "./core/open";
+import { spinner } from "./core/progress";
 import { cs } from "./games/cs";
 
 const games: Record<string, Game> = { cs };
@@ -44,12 +45,15 @@ async function loadEnv(): Promise<void> {
 
 const ask: Ask = (question) => prompt(question)?.trim() ?? "";
 
+const progress = spinner();
+
 function context(config: Config, refresh: boolean): Context {
   return {
     contact: config.core?.email ?? "",
     cache: fileCache(refresh),
     env: process.env,
-    warn: (message) => console.error(message),
+    warn: progress.warn,
+    progress: progress.update,
   };
 }
 
@@ -90,14 +94,13 @@ async function show(
 ): Promise<void> {
   if (!config.core?.email || config[name] === undefined)
     config = await setup(config, name, game);
-  const matches = rank(
-    await game.matches(
-      context(config, flags.has("--refresh")),
-      config[name],
-      today(new Date()),
-    ),
-    flags.has("--all"),
+  const found = await game.matches(
+    context(config, flags.has("--refresh")),
+    config[name],
+    today(new Date()),
   );
+  progress.stop();
+  const matches = rank(found, flags.has("--all"));
   if (!matches.length) {
     console.log("No matches today.");
     return;
@@ -107,6 +110,7 @@ async function show(
   const pick = matches[Number(ask("Watch which? (number, Enter to quit)")) - 1];
   if (!pick) return;
   const link = await pick.watch();
+  progress.stop();
   if (!link) {
     console.log("No link for that match yet.");
     return;
@@ -134,7 +138,13 @@ async function main(args: string[]): Promise<void> {
   else await show(config, name, game, flags);
 }
 
+process.on("SIGINT", () => {
+  progress.stop();
+  process.exit(130);
+});
+
 main(Bun.argv.slice(2)).catch((error: Error) => {
+  progress.stop();
   console.error(error.message);
   process.exitCode = 1;
 });

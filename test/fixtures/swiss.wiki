@@ -1,0 +1,465 @@
+==Results==
+===Overview===
+<section begin="Results"/>
+{{SwissStandings|format=swiss3
+|tiebreakers={{Json|matchscore|buchholz}}
+|bg=1-2=up,3-5=stayup,6-8=stay,9-16=down
+|placements=1-2;3-5;6-8;9-11;12-14;15-16
+
+|round1={{Round|matchgroups=qYes0iRpTj}}
+|round2={{Round|matchgroups=LP7mmVSfz0,JRTmcHTDxV}}
+|round3={{Round|matchgroups=8G2UXTP8Mk,1vWNDspyrc,bwmnugQQgC}}
+|round4={{Round|matchgroups=TbId6m7sSx,PqjSMr1RRE}}
+|round5={{Round|matchgroups=CucMSaqzMZ}}
+
+|{{TeamOpponent|nip|tiebreaker=16}}
+|{{TeamOpponent|pvision|tiebreaker=15}}
+|{{TeamOpponent|heroic|tiebreaker=14}}
+|{{TeamOpponent|faze|tiebreaker=13}}
+|{{TeamOpponent|tl|tiebreaker=12}}
+|{{TeamOpponent|ef|tiebreaker=11}}
+|{{TeamOpponent|100t|tiebreaker=10}}
+|{{TeamOpponent|9z|tiebreaker=9}}
+|{{TeamOpponent|m80|tiebreaker=8}}
+|{{TeamOpponent|dendele|tiebreaker=7}}
+|{{TeamOpponent|imp|tiebreaker=6}}
+|{{TeamOpponent|wildcard|tiebreaker=5}}
+|{{TeamOpponent|gosh|tiebreaker=4}}
+|{{TeamOpponent|fq|tiebreaker=3}}
+|{{TeamOpponent|chinggis|tiebreaker=2}}
+|{{TeamOpponent|lvg|tiebreaker=1}}
+}}<section end="Results"/>
+
+===Detailed Results===
+{{Toggle group start|state=hide}}
+====Round 1====
+{{Matchlist|id=qYes0iRpTj|width=380px|collapsed=false|title=Round 1 Matches|matchsection=Round 1
+|M1header=November 24, 2026
+|{{Match
+	|opponent1={{TeamOpponent|heroic}}|opponent2={{TeamOpponent|imp}}
+	|date=November 24, 2026 - 12:05 {{Abbr/SGT}} |finished=true
+	|twitch=PGL |youtube=PGL/_7LJB5SAgrY |kick=PGL
+	|map1={{Map|map=Mirage|finished=true
+		|t1firstside=ct|t1t=0|t1ct=6|t2t=6|t2ct=7
+		|stats=244965|vod=https://youtu.be/RDZVqR1EmT4?t=13}}
+	|hltv=2400494
+	}}
+|{{Match
+	|opponent1={{TeamOpponent|9z}}|opponent2={{TeamOpponent|lvg}}
+	|date=November 24, 2026 - 12:05 {{Abbr/SGT}} |finished=true
+	|twitch=PGL CS2 |youtube=PGL/r15_iNWob2A |kick=PGL CS2
+	|map1={{Map|map=Inferno|finished=true
+		|t1firstside=ct|t1t=5|t1ct=6|t2t=6|t2ct=7
+		|stats=244967|vod=https://youtu.be/UZFr8PSMvjk?t=37}}
+	|hltv=2400495
+	}}
+|{{Match
+	|opponent1={{TeamOpponent|nip}}|opponent2={{TeamOpponent|m80}}
+	|date=November 24, 2026 - 13:05 {{Abbr/SGT}} |finished=true
+	|twitch=PGL |youtube=PGL/_7LJB5SAgrY |kick=PGL
+	|map1={{Map|map=Mirage|finished=true
+		|t1firstside=ct|t1t=8|t1ct=5|t2t=7|t2ct=3
+		|stats=244968|vod=https://youtu.be/_goOJ02CAuM?t=32}}
+	|hltv=2400496
+	}}
+|{{Match
+	|opponent1={{TeamOpponent|100t}}|opponent2={{TeamOpponent|chinggis}}
+	|date=November 24, 2026 - 13:25 {{Abbr/SGT}} |finished=true
+	|twitch=PGL CS2 |youtube=PGL/r15_iNWob2A |kick=PGL CS2
+	|map1={{Map|map=Dust II|finished=true
+		|t1firstside=ct|t1t=6|t1ct=7|t2t=5|t2ct=1
+		|stats=244969|vod=https://youtu.be/PsrUzYqzcVk?t=39}}
+	|hltv=2400497
+	}}
+|{{Match
+	|opponent1={{TeamOpponent|pvision}}|opponent2={{TeamOpponent|dendele}}
+	|date=November 24, 2026 - 14:25 {{Abbr/SGT}} |finished=true
+	|twitch=PGL CS2 |youtube=PGL/r15_iNWob2A |kick=PGL CS2
+	|map1={{Map|map=Ancient|finished=true
+		|t1firstside=ct|t1t=4|t1ct=9|t2t=3|t2ct=0
+		|stats=244971|vod=https://youtu.be/KJjF9OdrUHg?t=44}}
+	|hltv=2400499
+	}}
+|{{Match
+	|opponent1={{TeamOpponent|tl}}|opponent2={{TeamOpponent|gosh}}
+	|date=November 24, 2026 - 14:10 {{Abbr/SGT}} |finished=true
+	|twitch=PGL |youtube=PGL/_7LJB5SAgrY |kick=PGL
+	|map1={{Map|map=Nuke|finished=true
+		|t1firstside=ct|t1t=2|t1ct=11|t2t=1|t2ct=0
+		|stats=244970|vod=https://youtu.be/1M0N_FZk1zo?t=43}}
+	|hltv=2400498
+	}}
+|{{Match
+	|opponent1={{TeamOpponent|faze}}|opponent2={{TeamOpponent|wildcard}}
+	|date=November 24, 2026 - 15:00 {{Abbr/SGT}} |finished=true
+	|twitch=PGL |youtube=PGL/_7LJB5SAgrY |kick=PGL
+	|map1={{Map|map=Nuke|finished=true
+		|t1firstside=ct|t1t=4|t1ct=5|t2t=7|t2ct=6
+		|stats=244972|vod=https://youtu.be/5g-cMIdKdOM?t=44}}
+	|hltv=2400500
+	}}
+|{{Match
+	|opponent1={{TeamOpponent|ef}}|opponent2={{TeamOpponent|fq}}
+	|date=November 24, 2026 - 15:20 {{Abbr/SGT}} |finished=true
+	|twitch=PGL CS2 |youtube=PGL/r15_iNWob2A |kick=PGL CS2
+	|map1={{Map|map=Dust II|finished=true
+		|t1firstside=ct|t1t=3|t1ct=4|t2t=8|t2ct=5
+		|stats=244973|vod=https://youtu.be/RduM9Yjydlg?t=44}}
+	|hltv=2400501
+	}}
+}}
+
+====Round 2====
+{{Toggle group start|state=hide}}
+{{box|start|padding=2em}}
+=====High=====
+{{Matchlist|id=LP7mmVSfz0|width=380px|collapsed=false|title=Round 2 High Matches|matchsection=Round 2
+|M1header=November 24, 2026
+|{{Match
+	|opponent1={{TeamOpponent|nip}}|opponent2={{TeamOpponent|lvg}}
+	|date=November 24, 2026 - 16:45 {{Abbr/SGT}} |finished=true
+	|twitch=PGL |youtube=PGL/_7LJB5SAgrY |kick=PGL
+	|map1={{Map|map=Ancient|finished=true
+		|t1firstside=ct|t1t=6|t1ct=7|t2t=5|t2ct=5
+		|stats=244975|vod=https://youtu.be/wNIDbCmvoNI?t=8}}
+	|hltv=2400557
+	}}
+|{{Match
+	|opponent1={{TeamOpponent|100t}}|opponent2={{TeamOpponent|imp}}
+	|date=November 24, 2026 - 17:50 {{Abbr/SGT}} |finished=true
+	|twitch=PGL |youtube=PGL/_7LJB5SAgrY |kick=PGL
+	|map1={{Map|map=Nuke|finished=true
+		|t1firstside=ct|t1t=4|t1ct=7|t2t=5|t2ct=8
+		|stats=244979|vod=https://youtu.be/0exAGjTwl3I?t=41}}
+	|hltv=2400559
+	}}
+|{{Match
+	|opponent1={{TeamOpponent|pvision}}|opponent2={{TeamOpponent|fq}}
+	|date=November 24, 2026 - 19:00 {{Abbr/SGT}} |finished=true
+	|twitch=PGL |youtube=PGL/_7LJB5SAgrY |kick=PGL
+	|map1={{Map|map=Dust II|finished=true
+		|t1firstside=ct|t1t=5|t1ct=4|t2t=8|t2ct=5
+		|stats=244982|vod=https://youtu.be/ivYA0jhe36g?t=27}}
+	|hltv=2400561
+	}}
+|{{Match
+	|opponent1={{TeamOpponent|tl}}|opponent2={{TeamOpponent|wildcard}}
+	|date=November 24, 2026 - 19:55 {{Abbr/SGT}} |finished=true
+	|twitch=PGL CS2 |youtube=PGL/r15_iNWob2A |kick=PGL CS2
+	|map1={{Map|map=Mirage|finished=true
+		|t1firstside=ct|t1t=5|t1ct=8|t2t=4|t2ct=4
+		|stats=244983|vod=https://youtu.be/aTrHsuiK_B4?t=42}}
+	|hltv=2400563
+	}}
+}}
+{{box|break|padding=2em}}
+
+=====Low=====
+{{Matchlist|id=JRTmcHTDxV|width=380px|collapsed=false|title=Round 2 Low Matches|matchsection=Round 2
+|M1header=November 24, 2026
+|{{Match
+	|opponent1={{TeamOpponent|heroic}}|opponent2={{TeamOpponent|chinggis}}
+	|date=November 24, 2026 - 16:45 {{Abbr/SGT}} |finished=true
+	|twitch=PGL CS2 |youtube=PGL/r15_iNWob2A |kick=PGL CS2
+	|map1={{Map|map=Nuke|finished=true
+		|t1firstside=ct|t1t=3|t1ct=10|t2t=2|t2ct=1
+		|stats=244974|vod=https://youtu.be/eF8yk3TiwBo?t=41}}
+	|hltv=2400558
+	}}
+|{{Match
+	|opponent1={{TeamOpponent|9z}}|opponent2={{TeamOpponent|m80}}
+	|date=November 24, 2026 - 17:40 {{Abbr/SGT}} |finished=true
+	|twitch=PGL CS2 |youtube=PGL/r15_iNWob2A |kick=PGL CS2
+	|map1={{Map|map=Mirage|finished=true
+		|t1firstside=ct|t1t=5|t1ct=3|t2t=9|t2ct=4
+		|stats=244977|vod=https://youtu.be/XQuLTW9aBeM?t=123}}
+	|hltv=2400560
+	}}
+|{{Match
+	|opponent1={{TeamOpponent|ef}}|opponent2={{TeamOpponent|dendele}}
+	|date=November 24, 2026 - 18:45 {{Abbr/SGT}} |finished=true
+	|twitch=PGL CS2 |youtube=PGL/r15_iNWob2A |kick=PGL CS2
+	|map1={{Map|map=Anubis|finished=true
+		|t1firstside=t|t1t=7|t1ct=6|t2t=3|t2ct=5
+		|stats=244980|vod=https://youtu.be/7DtJSohMhXU?t=31}}
+	|hltv=2400562
+	}}
+|{{Match
+	|opponent1={{TeamOpponent|faze}}|opponent2={{TeamOpponent|gosh}}
+	|date=November 24, 2026 - 20:10 {{Abbr/SGT}} |finished=true
+	|twitch=PGL |youtube=PGL/_7LJB5SAgrY |kick=PGL
+	|map1={{Map|map=Mirage|finished=true
+		|t1firstside=ct|t1t=3|t1ct=10|t2t=2|t2ct=1
+		|stats=244984|vod=https://youtu.be/sRwExqSXBUs?t=95}}
+	|hltv=2400564
+	}}
+}}
+{{box|end}}
+{{Toggle group end}}
+
+====Round 3====
+{{Toggle group start|state=hide}}
+{{box|start|padding=2em}}
+=====High=====
+{{Matchlist|id=8G2UXTP8Mk|width=380px|collapsed=false|title=Round 3 High Matches|matchsection=Round 3
+|M1header=November 25, 2026
+|{{Match
+	|opponent1={{TeamOpponent|imp}}|opponent2={{TeamOpponent|fq}}
+	|date=November 25, 2026 - 16:30 {{Abbr/SGT}} |finished=true
+	|twitch=PGL |youtube=PGL/Cfe3Vp39n2g |kick=PGL
+	|map1={{Map|map=Dust II|finished=true
+		|t1firstside=ct|t1t=4|t1ct=7|t2t=5|t2ct=8
+		|stats=245008|vod=https://youtu.be/yLF2UqLeMGI?t=38}}
+	|map2={{Map|map=Cache|finished=true
+		|t1firstside=t|t1t=7|t1ct=2|t2t=8|t2ct=5
+		|stats=245011|vod=https://youtu.be/yLF2UqLeMGI?t=3372}}
+	|map3={{Map|map=Inferno|finished=skip}}
+	|hltv=2400569
+	}}
+|{{Match
+	|opponent1={{TeamOpponent|nip}}|opponent2={{TeamOpponent|tl}}
+	|date=November 25, 2026 - 19:00 {{Abbr/SGT}} |finished=true
+	|twitch=PGL |youtube=PGL/Cfe3Vp39n2g |kick=PGL
+	|map1={{Map|map=Inferno|finished=true
+		|t1firstside=ct|t1t=4|t1ct=9|t2t=3|t2ct=0
+		|stats=245014|vod=https://youtu.be/xXE-22NJDyQ?t=14}}
+	|map2={{Map|map=Ancient|finished=true
+		|t1firstside=t|t1t=8|t1ct=5|t2t=4|t2ct=4
+		|stats=245016|vod=https://youtu.be/xXE-22NJDyQ?t=1905}}
+	|map3={{Map|map=Nuke|finished=skip}}
+	|hltv=2400571
+	}}
+}}
+{{box|break|padding=2em}}
+
+=====Mid=====
+{{Matchlist|id=1vWNDspyrc|width=380px|collapsed=false|title=Round 3 Mid Matches|matchsection=Round 3
+|M1header=November 25, 2026
+|{{Match
+	|opponent1={{TeamOpponent|heroic}}|opponent2={{TeamOpponent|m80}}
+	|date=November 25, 2026 - 14:00 {{Abbr/SGT}} |finished=true
+	|twitch=PGL |youtube=PGL/Cfe3Vp39n2g |kick=PGL
+	|map1={{Map|map=Inferno|finished=true
+		|t1firstside=ct|t1t=5|t1ct=5|t2t=7|t2ct=6
+		|stats=245004|vod=https://youtu.be/XWC3l6l1Agk?t=21}}
+	|hltv=2400565
+	}}
+|{{Match
+	|opponent1={{TeamOpponent|ef}}|opponent2={{TeamOpponent|100t}}
+	|date=November 25, 2026 - 14:00 {{Abbr/SGT}} |finished=true
+	|twitch=PGL CS2 |youtube=PGL/RaTTf_zsK1s |kick=PGL CS2
+	|map1={{Map|map=Mirage|finished=true
+		|t1firstside=ct|t1t=5|t1ct=8|t2t=4|t2ct=2
+		|stats=245003|vod=https://youtu.be/Xw2AJ3mU2Q8?t=46}}
+	|hltv=2400566
+	}}
+|{{Match
+	|opponent1={{TeamOpponent|wildcard}}|opponent2={{TeamOpponent|lvg}}
+	|date=November 25, 2026 - 15:00 {{Abbr/SGT}} |finished=true
+	|twitch=PGL CS2 |youtube=PGL/RaTTf_zsK1s |kick=PGL CS2
+	|map1={{Map|map=Dust II|finished=true
+		|t1firstside=ct|t1t=2|t1ct=6|t2t=6|t2ct=7
+		|stats=245005|vod=https://youtu.be/0-aHOjCVKc8?t=49}}
+	|hltv=2400568
+	}}
+|{{Match
+	|opponent1={{TeamOpponent|pvision}}|opponent2={{TeamOpponent|faze}}
+	|date=November 25, 2026 - 15:10 {{Abbr/SGT}} |finished=true
+	|twitch=PGL |youtube=PGL/Cfe3Vp39n2g |kick=PGL
+	|map1={{Map|map=Mirage|finished=true
+		|t1firstside=t|t1t=10|t1ct=3|t2t=8|t2ct=2
+		|stats=245006|vod=https://youtu.be/zz_1DdYXoL0?t=31}}
+	|hltv=2400567
+	}}
+}}
+{{box|break|padding=2em}}
+
+=====Low=====
+{{Matchlist|id=bwmnugQQgC|width=380px|collapsed=false|title=Round 3 Low Matches|matchsection=Round 3
+|M1header=November 25, 2026
+|{{Match
+	|opponent1={{TeamOpponent|9z}}|opponent2={{TeamOpponent|dendele}}
+	|date=November 25, 2026 - 16:05 {{Abbr/SGT}} |finished=true
+	|twitch=PGL CS2 |youtube=PGL/RaTTf_zsK1s |kick=PGL CS2
+	|map1={{Map|map=Mirage|finished=true
+		|t1firstside=ct|t1t=2|t1ct=11|t2t=1|t2ct=4
+		|stats=245007|vod=https://youtu.be/MhUMnhXn55Q?t=44}}
+	|map2={{Map|map=Cache|finished=true
+		|t1firstside=t|t1t=6|t1ct=7|t2t=1|t2ct=6
+		|stats=245010|vod=https://youtu.be/MhUMnhXn55Q?t=2016}}
+	|map3={{Map|map=Nuke|finished=skip}}
+	|hltv=2400570
+	}}
+|{{Match
+	|opponent1={{TeamOpponent|gosh}}|opponent2={{TeamOpponent|chinggis}}
+	|date=November 25, 2026 - 18:00 {{Abbr/SGT}} |finished=true
+	|twitch=PGL CS2 |youtube=PGL/RaTTf_zsK1s |kick=PGL CS2
+	|map1={{Map|map=Ancient|finished=true
+		|t1firstside=ct|t1t=5|t1ct=6|t2t=6|t2ct=7
+		|stats=245012|vod=https://youtu.be/YpmvYFZnuGI?t=48}}
+	|map2={{Map|map=Dust II|finished=true
+		|t1firstside=t|t1t=6|t1ct=7|t2t=0|t2ct=6
+		|stats=245015|vod=https://youtu.be/YpmvYFZnuGI?t=2923}}
+	|map3={{Map|map=Nuke|finished=true
+		|t1firstside=ct|t1t=7|t1ct=3|t2t=9|t2ct=4
+		|stats=245018|vod=https://youtu.be/YpmvYFZnuGI?t=5323}}
+	|hltv=2400572
+	}}
+}}
+{{box|end}}
+{{Toggle group end}}
+
+====Round 4====
+{{Toggle group start|state=hide}}
+{{box|start|padding=2em}}
+=====High=====
+{{Matchlist|id=TbId6m7sSx|width=380px|collapsed=false|title=Round 4 High Matches|matchsection=Round 4
+|M1header=November 26, 2026
+|{{Match
+	|opponent1={{TeamOpponent|m80}}|opponent2={{TeamOpponent|ef}}
+	|date=November 26, 2026 - 14:00 {{Abbr/SGT}} |finished=true
+	|twitch=PGL |youtube=PGL/QShWdre4DV8 |kick=PGL
+	|map1={{Map|map=Dust II|finished=true
+		|t1firstside=ct|t1t=3|t1ct=10|t2t=2|t2ct=4
+		|stats=245043|vod=https://youtu.be/8vfVDQjOWbs?t=33}}
+	|map2={{Map|map=Anubis|finished=true
+		|t1firstside=ct|t1t=0|t1ct=3|t2t=9|t2ct=4
+		|stats=245044|vod=https://youtu.be/8vfVDQjOWbs?t=2784}}
+	|map3={{Map|map=Cache|finished=true
+		|t1firstside=ct|t1t=2|t1ct=2|t2t=10|t2ct=3
+		|stats=245046|vod=https://youtu.be/8vfVDQjOWbs?t=4673}}
+	|hltv=2400573
+	}}
+|{{Match
+	|opponent1={{TeamOpponent|lvg}}|opponent2={{TeamOpponent|pvision}}
+	|date=November 26, 2026 - 16:50 {{Abbr/SGT}} |finished=true
+	|twitch=PGL |youtube=PGL/QShWdre4DV8 |kick=PGL
+	|map1={{Map|map=Ancient|finished=true
+		|t1firstside=ct|t1t=1|t1ct=6|t2t=6|t2ct=7
+		|stats=245051|vod=https://youtu.be/M5-PVludFUw?t=30}}
+	|map2={{Map|map=Dust II|finished=true
+		|t1firstside=ct|t1t=6|t1ct=4|t2t=8|t2ct=5
+		|stats=245057|vod=https://youtu.be/M5-PVludFUw?t=2816}}
+	|map3={{Map|map=Inferno|finished=skip}}
+	|hltv=2400575
+	}}
+|{{Match
+	|opponent1={{TeamOpponent|imp}}|opponent2={{TeamOpponent|tl}}
+	|date=November 26, 2026 - 19:20 {{Abbr/SGT}} |finished=true
+	|twitch=PGL |youtube=PGL/QShWdre4DV8 |kick=PGL
+	|map1={{Map|map=Anubis|finished=true
+		|t1firstside=t|t1t=6|t1ct=1|t2t=7|t2ct=6
+		|stats=245060|vod=https://youtu.be/DdBe6iciD1g?t=34}}
+	|map2={{Map|map=Cache|finished=true
+		|t1firstside=t|t1t=6|t1ct=6|t2t=6|t2ct=6
+		|o1t1firstside=ct|o1t1t=0|o1t1ct=1|o1t2t=2|o1t2ct=2
+		|stats=245068|vod=https://youtu.be/DdBe6iciD1g?t=2691}}
+	|map3={{Map|map=Mirage|finished=skip}}
+	|hltv=2400577
+	}}
+}}
+{{box|break|padding=2em}}
+
+=====Low=====
+{{Matchlist|id=PqjSMr1RRE|width=380px|collapsed=false|title=Round 4 Low Matches|matchsection=Round 4
+|M1header=November 26, 2026
+|{{Match
+	|opponent1={{TeamOpponent|heroic}}|opponent2={{TeamOpponent|faze}}
+	|date=November 26, 2026 - 14:00 {{Abbr/SGT}} |finished=true
+	|twitch=PGL CS2 |youtube=PGL/GqUI1CqXc48 |kick=PGL CS2
+	|map1={{Map|map=Mirage|finished=true
+		|t1firstside=ct|t1t=4|t1ct=9|t2t=3|t2ct=0
+		|stats=245042|vod=https://youtu.be/0C-EFwM7YEs?t=47}}
+	|map2={{Map|map=Ancient|finished=true
+		|t1firstside=t|t1t=5|t1ct=6|t2t=6|t2ct=7
+		|stats=245045|vod=https://youtu.be/0C-EFwM7YEs?t=2232}}
+	|map3={{Map|map=Nuke|finished=true
+		|t1firstside=ct|t1t=4|t1ct=9|t2t=3|t2ct=0
+		|stats=245047|vod=https://youtu.be/0C-EFwM7YEs?t=5244}}
+	|hltv=2400574
+	}}
+|{{Match
+	|opponent1={{TeamOpponent|100t}}|opponent2={{TeamOpponent|9z}}
+	|date=November 26, 2026 - 17:00 {{Abbr/SGT}} |finished=true
+	|twitch=PGL CS2 |youtube=PGL/GqUI1CqXc48 |kick=PGL CS2
+	|map1={{Map|map=Nuke|finished=true
+		|t1firstside=ct|t1t=1|t1ct=4|t2t=8|t2ct=5
+		|stats=245048|vod=https://youtu.be/FDDDQRmIauw?t=24}}
+	|map2={{Map|map=Dust II|finished=true
+		|t1firstside=t|t1t=7|t1ct=6|t2t=1|t2ct=5
+		|stats=245055|vod=https://youtu.be/FDDDQRmIauw?t=2404}}
+	|map3={{Map|map=Ancient|finished=true
+		|t1firstside=ct|t1t=5|t1ct=8|t2t=4|t2ct=1
+		|stats=245059|vod=https://youtu.be/FDDDQRmIauw?t=4817}}
+	|hltv=2400576
+	}}
+|{{Match
+	|opponent1={{TeamOpponent|wildcard}}|opponent2={{TeamOpponent|chinggis}}
+	|date=November 26, 2026 - 20:05 {{Abbr/SGT}} |finished=true
+	|twitch=PGL CS2 |youtube=PGL/GqUI1CqXc48 |kick=PGL CS2
+	|map1={{Map|map=Dust II|finished=true
+		|t1firstside=ct|t1t=5|t1ct=8|t2t=4|t2ct=3
+		|stats=245063|vod=https://youtu.be/BdqsHOUy_fo?t=46}}
+	|map2={{Map|map=Cache|finished=true
+		|t1firstside=t|t1t=6|t1ct=5|t2t=7|t2ct=6
+		|stats=245070|vod=https://youtu.be/BdqsHOUy_fo?t=2656}}
+	|map3={{Map|map=Nuke|finished=true
+		|t1firstside=ct|t1t=6|t1ct=6|t2t=6|t2ct=6
+		|o1t1firstside=t|o1t1t=2|o1t1ct=1|o1t2t=2|o1t2ct=1
+		|o2t1firstside=ct|o2t1t=1|o2t1ct=3|o2t2t=0|o2t2ct=1
+		|stats=245077|vod=https://youtu.be/BdqsHOUy_fo?t=5628}}
+	|hltv=2400578
+	}}
+}}
+{{box|end}}
+{{Toggle group end}}
+
+====Round 5====
+{{Matchlist|id=CucMSaqzMZ|width=380px|collapsed=false|title=Round 5 Matches|matchsection=Round 5
+|M1header=November 27, 2026
+|{{Match
+	|opponent1={{TeamOpponent|lvg}}|opponent2={{TeamOpponent|heroic}}
+	|date=November 27, 2026 - 14:00 {{Abbr/SGT}} |finished=true
+	|twitch=PGL |youtube=PGL |kick=PGL
+	|map1={{Map|map=Nuke|finished=true
+		|t1firstside=ct|t1t=3|t1ct=10|t2t=2|t2ct=9
+		|stats=245103|vod=}}
+	|map2={{Map|map=Dust II|finished=true
+		|t1firstside=t|t1t=10|t1ct=3|t2t=4|t2ct=2
+		|stats=245104|vod=}}
+	|map3={{Map|map=Ancient|finished=skip}}
+	|hltv=2400579
+	}}
+|{{Match
+	|opponent1={{TeamOpponent|imp}}|opponent2={{TeamOpponent|wildcard}}
+	|date=November 27, 2026 - 16:30 {{Abbr/SGT}} |finished=
+	|twitch=PGL |youtube=PGL |kick=PGL
+	|map1={{Map|map=Dust II|finished=true
+		|t1firstside=ct|t1t=7|t1ct=6|t2t=6|t2ct=5
+		|stats=245105|vod=}}
+	|map2={{Map|map=Mirage|finished=true
+		|t1firstside=t|t1t=1|t1ct=10|t2t=2|t2ct=11
+		|stats=245108|vod=}}
+	|map3={{Map|map=Cache|finished=
+		|t1firstside=ct|t1t=|t1ct=7|t2t=5|t2ct=
+		|stats=|vod=}}
+	|hltv=2400580
+	}}
+|{{Match
+	|opponent1={{TeamOpponent|m80}}|opponent2={{TeamOpponent|100t}}
+	|date=November 27, 2026 - 19:45 {{Abbr/SGT}} |finished=
+	|twitch=PGL |youtube=PGL |kick=PGL
+	|map1={{Map|map=|finished=
+		|t1firstside=|t1t=|t1ct=|t2t=|t2ct=
+		|stats=|vod=}}
+	|map2={{Map|map=|finished=
+		|t1firstside=|t1t=|t1ct=|t2t=|t2ct=
+		|stats=|vod=}}
+	|map3={{Map|map=|finished=
+		|t1firstside=|t1t=|t1ct=|t2t=|t2ct=
+		|stats=|vod=}}
+	|hltv=2400581
+	}}
+}}
+{{Toggle group end}}
+

@@ -19,6 +19,7 @@ import {
 } from "./liquipedia";
 import { loadStandings, type RankOf } from "./rankings";
 import { scoreMatches } from "./score";
+import { formatStakes, placeMatch, stages } from "./stakes";
 import { findVideo, videoId, videoStats, type VideoStats } from "./youtube";
 
 const TEN_MINUTES = 600_000;
@@ -38,7 +39,7 @@ function readConfig(config: unknown): CsConfig {
 const client = (ctx: Context): Client => ({
   contact: ctx.contact,
   cacheDir,
-  warn: ctx.warn,
+  progress: ctx.progress,
 });
 
 function status(match: TickerMatch, now: Date): Status {
@@ -54,14 +55,18 @@ function inWindow(match: TickerMatch, window: Window): boolean {
     : match.start <= window.to;
 }
 
+const pageTitle = (match: TickerMatch) => match.eventPage.replace(/_/g, " ");
+
+const eventWikitext = (ctx: Context, page: string) =>
+  ctx.cache(`wikitext:${page}`, TEN_MINUTES, () =>
+    pageWikitext(client(ctx), page),
+  );
+
 async function stream(
   ctx: Context,
   match: TickerMatch,
 ): Promise<string | undefined> {
-  const page = match.eventPage.replace(/_/g, " ");
-  const wikitext = await ctx.cache(`wikitext:${page}`, TEN_MINUTES, () =>
-    pageWikitext(client(ctx), page),
-  );
+  const wikitext = await eventWikitext(ctx, pageTitle(match));
   return findStream(wikitext, match.start, match.tzOffset, match.teams);
 }
 
@@ -99,6 +104,28 @@ async function orSkip<T>(
     ctx.warn(`Skipping ${what}: ${(error as Error).message}`);
     return fallback;
   }
+}
+
+async function eventPages(
+  ctx: Context,
+  matches: TickerMatch[],
+): Promise<Map<string, string>> {
+  // Ticker cards for some streams link to a special page rather than an event.
+  const pages = [...new Set(matches.map(pageTitle))].filter(
+    (page) => !page.startsWith("Special:"),
+  );
+  const wikitexts = new Map<string, string>();
+  for (const [i, page] of pages.entries()) {
+    ctx.progress(`Reading event pages (${i + 1}/${pages.length})…`);
+    const wikitext = await orSkip<string | undefined>(
+      ctx,
+      `the stakes for ${page}`,
+      () => eventWikitext(ctx, page),
+      undefined,
+    );
+    if (wikitext !== undefined) wikitexts.set(page, wikitext);
+  }
+  return wikitexts;
 }
 
 export const cs: Game = {
@@ -140,13 +167,25 @@ export const cs: Game = {
     window: Window,
   ): Promise<Match[]> {
     const { teams } = readConfig(config);
+    ctx.progress("Loading matches…");
     const html = await ctx.cache(
       `tickers:${teams.join("|")}`,
       TEN_MINUTES,
       () => renderTickers(client(ctx), teams),
     );
-    const matches = parseTicker(html).filter((m) => inWindow(m, window));
+    const ticker = parseTicker(html);
+    const matches = ticker.filter((m) => inWindow(m, window));
 
+    const wikitexts = await eventPages(ctx, matches);
+    const placements = matches.map((m) => {
+      const wikitext = wikitexts.get(pageTitle(m));
+      return wikitext === undefined
+        ? undefined
+        : placeMatch(wikitext, m.start, m.tzOffset, m.teams);
+    });
+    const stageNames = matches.map((m, i) => stages(m, placements[i]));
+
+    ctx.progress("Loading rankings…");
     const rankOf = await orSkip<RankOf>(
       ctx,
       "rankings",
@@ -158,6 +197,7 @@ export const cs: Game = {
       m.finished && m.vod ? videoId(m.vod) : undefined,
     );
     const ids = videoIds.filter((id): id is string => id !== undefined);
+    if (key && ids.length) ctx.progress("Fetching view counts…");
     const stats =
       key && ids.length
         ? await orSkip(
@@ -172,9 +212,12 @@ export const cs: Game = {
       matches.map((m, i) => {
         const id = videoIds[i];
         const video = id ? stats.get(id) : undefined;
+        const placement = placements[i];
+        const stakes = placement ? placement.stakes : formatStakes(m, ticker);
         return {
           tier: m.tier,
-          stage: m.stage,
+          stage: stageNames[i]!.scored,
+          ...(stakes ? { stakes } : {}),
           ranks: [rankOf(m.teams[0]), rankOf(m.teams[1])],
           ...(video ? { video } : {}),
         };
@@ -186,7 +229,7 @@ export const cs: Game = {
       status: status(m, window.now),
       start: m.start,
       title: `${m.teams[0].name} vs ${m.teams[1].name}`,
-      detail: `${m.event} · ${m.stage}`,
+      detail: `${m.event} · ${stageNames[i]!.shown}`,
       favourite: m.teams.some((t) => teams.includes(t.page)),
       score: scores[i]!,
       watch: () => watch(ctx, m, window.now),

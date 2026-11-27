@@ -32,8 +32,9 @@ Your teams come first. The others are ranked by:
 
 - the event's tier;
 - the stage, from grand final down to groups;
+- what's at stake, read from the event's page: a decider (the winner goes through and the loser goes out) ranks highest, then a match the loser goes out of, then one that sends the winner through. That covers Swiss rounds, GSL groups and lower brackets. Together with the stage, it never outranks a grand final. The list never shows what's at stake, since that would give away earlier results;
 - both teams' places in [Valve's Regional Standings](https://github.com/ValveSoftware/counter-strike_regional_standings);
-- for finished matches, the video's views per hour since upload, compared with the other videos in the list. Videos under 3 hours old don't count.
+- for finished matches, the video's views per hour since upload, compared with the typical rate among videos at least 3 hours old. A video under an hour old counts as an hour old, so a fresh video with lots of views ranks high straight away.
 
 ## Setup
 
@@ -74,7 +75,7 @@ motd setup cs       choose your teams
 
 ## Where the data comes from
 
-- [Liquipedia](https://liquipedia.net/counterstrike): matches, tiers, stages and VOD links. Content is [CC-BY-SA 3.0](https://liquipedia.net/api-terms-of-use). motd keeps to its rate limits (one request every 2 seconds, one page render every 30) and caches responses for 10 minutes in `~/.cache/motd`. So a run straight after `--refresh` can wait up to 30 seconds.
+- [Liquipedia](https://liquipedia.net/counterstrike): matches, tiers, stages, VOD links and each event's page. Content is [CC-BY-SA 3.0](https://liquipedia.net/api-terms-of-use). motd keeps to its rate limits (one request every 2 seconds, one page render every 30) and caches responses for 10 minutes in `~/.cache/motd`. So a run straight after `--refresh` can wait up to 30 seconds, plus 2 seconds for each event page; a line on the terminal shows what it's waiting for.
 - [Valve Regional Standings](https://github.com/ValveSoftware/counter-strike_regional_standings): team rankings, cached for a day.
 - YouTube Data API: view counts and searches, if you've set a key.
 
@@ -85,4 +86,4 @@ bun test
 bun run typecheck
 ```
 
-`src/core` is the command: arguments, setup, config, cache, ranking the list and opening links. Each game is one folder under `src/games` that exports a `Game` (`src/core/game.ts`) and is added to the map in `src/cli.ts`.
+`src/core` is the command: arguments, setup, config, cache, progress, ranking the list and opening links. Each game is one folder under `src/games` that exports a `Game` (`src/core/game.ts`) and is added to the map in `src/cli.ts`.
