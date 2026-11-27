@@ -1,6 +1,11 @@
 import { describe, expect, test } from "bun:test";
 import type { TickerMatch } from "../src/games/cs/liquipedia";
-import { formatStakes, placeMatch, stages } from "../src/games/cs/stakes";
+import {
+  formatStakes,
+  placeMatch,
+  reason,
+  stage,
+} from "../src/games/cs/stakes";
 
 const fixture = (name: string) =>
   Bun.file(new URL(`./fixtures/${name}.wiki`, import.meta.url)).text();
@@ -115,30 +120,40 @@ describe("formatStakes", () => {
   });
 });
 
-describe("stages", () => {
+describe("stage", () => {
   test("uses the bracket round when the ticker names none", () => {
-    expect(stages(ticker("Bo3"), { round: "Quarterfinals" })).toEqual({
-      scored: "Quarterfinals - Bo3",
-      shown: "Quarterfinals - Bo3",
-    });
-    expect(stages(ticker("Playoffs - Bo5"), { round: "Grand Final" })).toEqual({
-      scored: "Grand Final - Bo5",
-      shown: "Grand Final - Bo5",
-    });
-  });
-
-  test("scores but never shows an upper or lower bracket round", () => {
+    expect(stage(ticker("Bo3"), { round: "Quarterfinals" })).toBe(
+      "Quarterfinals - Bo3",
+    );
     expect(
-      stages(ticker("Playoffs - Bo3"), {
-        stakes: "elimination",
-        round: "Lower Bracket Final",
-      }),
-    ).toEqual({ scored: "Lower Bracket Final - Bo3", shown: "Playoffs - Bo3" });
+      stage(ticker("Playoffs - Bo3"), { round: "Lower Bracket Final" }),
+    ).toBe("Lower Bracket Final - Bo3");
   });
 
   test("keeps a stage the ticker already names", () => {
     expect(
-      stages(ticker("Group A - Bo3"), { round: "Upper Bracket Final" }),
-    ).toEqual({ scored: "Group A - Bo3", shown: "Group A - Bo3" });
+      stage(ticker("Group A - Bo3"), { round: "Upper Bracket Final" }),
+    ).toBe("Group A - Bo3");
+  });
+});
+
+describe("reason", () => {
+  test("names the stakes", () => {
+    expect(reason("Round 5 - Bo3", "decider")).toBe(
+      "winner through, loser out",
+    );
+    expect(reason("Round 3 - Bo3", "elimination")).toBe("loser is out");
+    expect(reason("Round 3 - Bo3", "qualification")).toBe(
+      "winner goes through",
+    );
+  });
+
+  test("names a grand final only when the stage doesn't", () => {
+    expect(reason("Playoffs - Bo5", undefined)).toBe("grand final");
+    expect(reason("Grand Final - Bo5", undefined)).toBeUndefined();
+  });
+
+  test("gives none for a match with nothing at stake", () => {
+    expect(reason("Quarterfinals - Bo3", undefined)).toBeUndefined();
   });
 });

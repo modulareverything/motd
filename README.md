@@ -5,9 +5,11 @@ Match of the day: today's best matches, with a link straight to the video, witho
 ```
 $ motd cs
 1. ★ LIVE                Team Vitality vs MOUZ
-                          BLAST Rivals Fall 2026 · Playoffs - Bo3
+                          BLAST Rivals Fall 2026 · Lower Bracket Final - Bo3 · loser is out
+
 2.   FINISHED Wed 11:00   Ninjas in Pyjamas vs Team Liquid
-                          PGL Major Singapore 2026 · Round 3 - Bo3
+                          PGL Major Singapore 2026 · Round 5 - Bo3 · winner through, loser out
+
 3.   UPCOMING 19:00      HEROIC vs FaZe Clan
                           PGL Major Singapore 2026 · Round 4 - Bo3
 
@@ -20,7 +22,7 @@ Type a number and the video opens in your browser:
 - **Live:** the stream, from the start.
 - **Upcoming:** the stream's channel.
 
-The list never shows a score, a winner or how many maps were played. YouTube's own page still shows the video's title and length.
+The list never shows this match's score, its winner or how many maps were played. YouTube's own page still shows the video's title and length.
 
 Only Counter-Strike (`cs`) exists so far.
 
@@ -32,7 +34,7 @@ Your teams come first. The others are ranked by:
 
 - the event's tier;
 - the stage, from grand final down to groups;
-- what's at stake, read from the event's page: a decider (the winner goes through and the loser goes out) ranks highest, then a match the loser goes out of, then one that sends the winner through. That covers Swiss rounds, GSL groups and lower brackets. Together with the stage, it never outranks a grand final. The list never shows what's at stake, since that would give away earlier results;
+- what's at stake, read from the event's page: a decider (the winner goes through and the loser goes out) ranks highest, then a match the loser goes out of, then one that sends the winner through. That covers Swiss rounds, GSL groups and lower brackets. Together with the stage, it never outranks a grand final. The list shows what's at stake, or "grand final" when the stage doesn't already say so. That gives away earlier results, such as both teams being on two losses, but never this match's. At a Major, a Swiss Bo3 the event's page doesn't place is assumed to put the loser out for ranking, but that guess isn't shown;
 - both teams' places in [Valve's Regional Standings](https://github.com/ValveSoftware/counter-strike_regional_standings);
 - for finished matches, the video's views per hour since upload, compared with the typical rate among videos at least 3 hours old. A video under an hour old counts as an hour old, so a fresh video with lots of views ranks high straight away.
 

@@ -31,5 +31,5 @@ export function render(matches: Match[]): string {
       const star = m.favourite ? "★" : " ";
       return `${n}. ${star} ${status(m).padEnd(19)} ${m.title}\n${" ".repeat(width + 25)}${m.detail}`;
     })
-    .join("\n");
+    .join("\n\n");
 }

@@ -19,7 +19,7 @@ import {
 } from "./liquipedia";
 import { loadStandings, type RankOf } from "./rankings";
 import { scoreMatches } from "./score";
-import { formatStakes, placeMatch, stages } from "./stakes";
+import { formatStakes, placeMatch, reason, stage } from "./stakes";
 import { findVideo, videoId, videoStats, type VideoStats } from "./youtube";
 
 const TEN_MINUTES = 600_000;
@@ -183,7 +183,7 @@ export const cs: Game = {
         ? undefined
         : placeMatch(wikitext, m.start, m.tzOffset, m.teams);
     });
-    const stageNames = matches.map((m, i) => stages(m, placements[i]));
+    const stageNames = matches.map((m, i) => stage(m, placements[i]));
 
     ctx.progress("Loading rankings…");
     const rankOf = await orSkip<RankOf>(
@@ -216,7 +216,7 @@ export const cs: Game = {
         const stakes = placement ? placement.stakes : formatStakes(m, ticker);
         return {
           tier: m.tier,
-          stage: stageNames[i]!.scored,
+          stage: stageNames[i]!,
           ...(stakes ? { stakes } : {}),
           ranks: [rankOf(m.teams[0]), rankOf(m.teams[1])],
           ...(video ? { video } : {}),
@@ -229,7 +229,13 @@ export const cs: Game = {
       status: status(m, window.now),
       start: m.start,
       title: `${m.teams[0].name} vs ${m.teams[1].name}`,
-      detail: `${m.event} · ${stageNames[i]!.shown}`,
+      detail: [
+        m.event,
+        stageNames[i]!,
+        reason(stageNames[i]!, placements[i]?.stakes),
+      ]
+        .filter(Boolean)
+        .join(" · "),
       favourite: m.teams.some((t) => teams.includes(t.page)),
       score: scores[i]!,
       watch: () => watch(ctx, m, window.now),

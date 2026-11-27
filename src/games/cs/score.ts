@@ -21,15 +21,22 @@ const TYPICAL_MIN_AGE_HOURS = 3;
 // A minutes-old video's views would otherwise be multiplied into an hourly rate it may never reach.
 const RATE_MIN_HOURS = 1;
 
-function stagePoints(stage: string): number {
+// Liquipedia's ticker often says only "Playoffs"; a Bo5 there is the grand final.
+export function isGrandFinal(stage: string): boolean {
   const s = stage.toLowerCase();
-  if (s.includes("grand final")) return GRAND_FINAL_POINTS;
+  return (
+    s.includes("grand final") || (s.includes("playoff") && s.includes("bo5"))
+  );
+}
+
+function stagePoints(stage: string): number {
+  if (isGrandFinal(stage)) return GRAND_FINAL_POINTS;
+  const s = stage.toLowerCase();
   if (s.includes("semi")) return 24;
   if (s.includes("quarter")) return 18;
   // Upper and lower bracket finals rank with the semi-finals.
   if (s.includes("final")) return 24;
-  // Liquipedia's ticker often says only "Playoffs"; a Bo5 there is the grand final.
-  if (s.includes("playoff")) return s.includes("bo5") ? GRAND_FINAL_POINTS : 15;
+  if (s.includes("playoff")) return 15;
   return 0;
 }
 

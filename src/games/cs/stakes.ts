@@ -1,11 +1,9 @@
 import { findMatch, type Team, type TickerMatch } from "./liquipedia";
+import { isGrandFinal } from "./score";
 
 export type Stakes = "decider" | "elimination" | "qualification";
 
-/**
- * Where a match sits in its event, read only from the event's structure, never from a result.
- * Stakes reveal earlier results, so they rank matches but never reach the screen.
- */
+/** Where a match sits in its event, read only from the event's structure, never from a result. */
 export interface Placement {
   stakes?: Stakes;
   /** The bracket round, such as "Quarterfinals" or "Lower Bracket Final". */
@@ -142,20 +140,30 @@ export function formatStakes(
 
 const BARE_STAGE = /^(?:Playoffs - )?(Bo\d+)$/;
 
-/**
- * The ticker often names no round in playoffs, so the bracket's round is used instead.
- * Upper and lower bracket names stay off the screen: a lower-bracket match shows which teams have lost.
- */
-export function stages(
+// The ticker often names no round in playoffs, so the bracket's round is used instead.
+export function stage(
   match: TickerMatch,
   placement: Placement | undefined,
-): { scored: string; shown: string } {
+): string {
   const format = match.stage.match(BARE_STAGE)?.[1];
   const round = placement?.round;
-  if (!format || !round) return { scored: match.stage, shown: match.stage };
-  const named = `${round} - ${format}`;
-  return {
-    scored: named,
-    shown: /(?:upper|lower) bracket/i.test(round) ? match.stage : named,
-  };
+  return format && round ? `${round} - ${format}` : match.stage;
+}
+
+const STAKES_REASONS: Record<Stakes, string> = {
+  decider: "winner through, loser out",
+  elimination: "loser is out",
+  qualification: "winner goes through",
+};
+
+/**
+ * Why a match ranks where it does, beyond what its stage already says.
+ * Stakes guessed from the format are left out, since they may be wrong.
+ */
+export function reason(
+  stage: string,
+  stakes: Stakes | undefined,
+): string | undefined {
+  if (isGrandFinal(stage) && !/grand final/i.test(stage)) return "grand final";
+  return stakes && STAKES_REASONS[stakes];
 }
